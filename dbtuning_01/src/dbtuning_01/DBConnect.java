@@ -19,11 +19,23 @@ public class DBConnect {
 		}
 	
 		//----------------------Connection to DB----------------------
+		
+		//---DBTuningss2020
 		String host = "biber.cosy.sbg.ac.at";
 		String port = "5432";
 		String database = "dbtuning_ss2020";
 		String pwd = "huth8lithe5E";
 		String user = "ibrezovic";
+
+		
+		//---Localhost
+		/*String host = "localhost";
+		String port = "5432";
+		String database = "postgres";
+		String pwd = "postgres";
+		String user = "postgres";*/
+		
+		
 		String url = "jdbc:postgresql://" + host + ":" + port + "/" + database;
 		Connection con = null;
 		try {
@@ -122,7 +134,7 @@ public class DBConnect {
         long duration = stopTS - startTS;
         float durationS = ((float) duration)/1000000000;
         
-        System.out.printf("Test complete. Elapsed time: %.1fs (%.1f rows/s)\n", durationS, numRows/durationS);
+        System.out.printf("Test complete. Elapsed time: %.1fs (%.1f rows/s)\n", durationS, numRows/durationS);//TODO:
     }
     
     //Den Code hier noch umschreiben!
