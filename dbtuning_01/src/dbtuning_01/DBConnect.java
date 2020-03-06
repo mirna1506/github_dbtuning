@@ -21,19 +21,19 @@ public class DBConnect {
 		//----------------------Connection to DB----------------------
 		
 		//---DBTuningss2020
-		/*String host = "biber.cosy.sbg.ac.at";
+		String host = "biber.cosy.sbg.ac.at";
 		String port = "5432";
 		String database = "dbtuning_ss2020";
-		String pwd = "huth8lithe5E";
-		String user = "ibrezovic";*/
+		String pwd = "Iechei5eexai";
+		String user = "mmrazovic";
 
 		
 		//---Localhost
-		String host = "localhost";
+		/*String host = "localhost";
 		String port = "5432";
 		String database = "postgres";
 		String pwd = "postgres";
-		String user = "postgres";
+		String user = "postgres";*/
 		
 		
 		String url = "jdbc:postgresql://" + host + ":" + port + "/" + database;
