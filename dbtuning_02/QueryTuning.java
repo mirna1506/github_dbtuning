@@ -97,5 +97,13 @@ public class QueryTuning {
     private static void filltableswithdata(Connection con) throws SQLException, IOException {
     	CopyManager cm = new CopyManager((BaseConnection) con);
     	
+    	//Create 10 Techdepart and safe in array
+    	
+    	//Create 100k of Students with an random Techdepart out of array
+    	
+    	//Create 100k of Employee
+    	
+    	//See additional information in assignment02.pdfy
+    	
     }
 }
