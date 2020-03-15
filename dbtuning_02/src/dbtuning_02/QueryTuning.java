@@ -1,5 +1,6 @@
 package dbtuning_02;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -46,9 +47,11 @@ public class QueryTuning {
 		
 		//----------------------Sequence Order BEGIN----------------------
 		createandclean(con);
+		filltableswithdata(con);
 		//----------------------Sequence Order END------------------------
     }
     
+    //creates the empty tables or cleans them if they existed befores
     private static void createandclean(Connection con) throws SQLException {
         con.createStatement().execute("DROP TABLE IF EXISTS \"Employee\";");
         con.createStatement().execute("CREATE TABLE \"Exmployee\" (\n" +
@@ -80,5 +83,10 @@ public class QueryTuning {
         con.createStatement().execute("ALTER TABLE \"Employee\"\n" +
                                       //"ADD FOREIGN KEY (\"ssnum\", \"name\") REFERENCES \"Student\"(\"ssnum\", \"name\"),\n" +
                                       "ADD FOREIGN KEY (\"dept\") REFERENCES \"Techdept\"(\"dept\");");
+    }
+    
+    //fills the tables with random data
+    private static void filltableswithdata(Connection con) throws SQLException, IOException {
+    	
     }
 }
