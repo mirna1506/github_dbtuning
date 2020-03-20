@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Random;
@@ -45,7 +46,7 @@ public class QueryTuning {
 		String host = "localhost";
 		String port = "5432";
 		String database = "postgres";
-		String pwd = "postgres";
+		String pwd = "lovenia";
 		String user = "postgres";
 		
 		
@@ -74,37 +75,37 @@ public class QueryTuning {
         System.out.print("Cleaning and Creating Tables... ");
         con.createStatement().execute("DROP TABLE IF EXISTS \"Employee\";");
         con.createStatement().execute("CREATE TABLE \"Employee\" (\n" +
-                                      "	ssnum int UNIQUE,\n" +
-                                      "	name	text UNIQUE,\n" +
-                                      "	manager text,\n" +
-                                      "	dept text,\n" +
-                                      "	salary real,\n" +
-                                      "	numfriends int,\n" +
+                                      "	ssnum INT NOT NULL UNIQUE,\n" +
+                                      "	name VARCHAR(40) NOT NULL UNIQUE,\n" +
+                                      "	manager VARCHAR(40),\n" +
+                                      "	dept VARCHAR(40),\n" +
+                                      "	salary NUMERIC(8,2) NOT NULL,\n" +
+                                      "	numfriends SMALLINT NOT NULL,\n" +
                                       " PRIMARY KEY (ssnum, name));");
         
         con.createStatement().execute("DROP TABLE IF EXISTS \"Student\";");
         con.createStatement().execute("CREATE TABLE \"Student\" (\n" +
-                                      "	ssnum int UNIQUE,\n" +
-                                      "	name text UNIQUE,\n" +
-                                      "	course text,\n" +
-                                      "	grade real,\n" +
+                                      "	ssnum INT NOT NULL UNIQUE,\n" +
+                                      "	name VARCHAR(40) NOT NULL UNIQUE,\n" +
+                                      "	course VARCHAR(40) NOT NULL,\n" +
+                                      "	grade SMALLINT NOT NULL,\n" +
                                       " PRIMARY KEY (ssnum, name));");
         
         con.createStatement().execute("DROP TABLE IF EXISTS \"Techdept\";");
         con.createStatement().execute("CREATE TABLE \"Techdept\" (\n" +
-                                      "	dept text UNIQUE,\n" +
-                                      "	manager text,\n" +
-                                      "	location text,\n" +
+                                      "	dept VARCHAR(40) NOT NULL UNIQUE,\n" +
+                                      "	manager VARCHAR(40) NOT NULL,\n" +
+                                      "	location VARCHAR(40) NOT NULL,\n" +
                                       " PRIMARY KEY (dept));");
         
-        con.createStatement().execute("CREATE UNIQUE INDEX ON \"Employee\" (ssnum);");
-        con.createStatement().execute("CREATE UNIQUE INDEX ON \"Employee\" (name);");
-        con.createStatement().execute("CREATE INDEX ON \"Employee\" (dept);");
+        con.createStatement().execute("CREATE UNIQUE INDEX employee_ssnum_unique_index ON \"Employee\" (ssnum);");
+        con.createStatement().execute("CREATE UNIQUE INDEX employee_name_unique_index ON \"Employee\" (name);");
+        con.createStatement().execute("CREATE INDEX employee_dept_index ON \"Employee\" (dept);");
         
-        con.createStatement().execute("CREATE UNIQUE INDEX ON \"Student\" (ssnum);");
-        con.createStatement().execute("CREATE UNIQUE INDEX ON \"Student\" (name);");
+        con.createStatement().execute("CREATE UNIQUE INDEX student_ssnum_unique_index ON \"Student\" (ssnum);");
+        con.createStatement().execute("CREATE UNIQUE INDEX student_name_unique_index ON \"Student\" (name);");
         
-        con.createStatement().execute("CREATE UNIQUE INDEX ON \"Techdept\" (dept);");
+        con.createStatement().execute("CREATE UNIQUE INDEX techdept_dept_unique_index ON \"Techdept\" (dept);");
         System.out.println("ok");
     }
     
@@ -134,7 +135,7 @@ public class QueryTuning {
     	//--------Create 100k students--------
         System.out.println("Creating Students...");
     	for(int i=0; i<100000; i++) {
-    		//ssnum, name, course, grade //HIER VLT FÜR COURSE WAS SINNVOLLES NEHMEN
+    		//ssnum, name, course, grade 
     		wr_student.write(i + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + ThreadLocalRandom.current().nextInt(1,6) + "\n");
     	}
     	wr_student.flush();
@@ -143,10 +144,11 @@ public class QueryTuning {
     	
     	//--------Create 100k employees--------
     	System.out.println("Creating Employees...");
+    	System.out.println();
     	for(int j=100000; j<200000; j++) {
     		String manager = null;
     		String dept = null;
-    		//In ~10% der Fälle soll random ein manager und ein dept gesetzt werden
+    		//In ~10% der F�lle soll random ein manager und ein dept gesetzt werden
     		if(ThreadLocalRandom.current().nextInt(1,11) == 5) {
     			int random = ThreadLocalRandom.current().nextInt(0,10);
     			manager = departments.get(random).getManager();
@@ -179,14 +181,55 @@ public class QueryTuning {
         departments.add(new Techdept("Software Testing", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
     }
 
-    //Hier zwei Queries schreiben, Zeit messen -> Siehe Programm1 !
     public static void orignalqueries(Connection con) throws SQLException{
+    	//first query
+    	System.out.println("Starting Query 1...");
+    	
+    	long startTS1 = System.nanoTime();
+    	con.createStatement().execute("SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\" GROUP BY dept HAVING dept = 'Databases' ; ");
+    	long stopTS1 = System.nanoTime();
+    	long duration1 = stopTS1 - startTS1;
+    	float durationS1 = ((float) duration1)/1000000000;
+    	System.out.println("Complete Query 1! Elapsed time: " + durationS1 + " Seconds");
+    	System.out.println();
+    	
+    	//second query
+    	System.out.println("Starting Query 2...");
+    	String qry2 = "SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; " ;
+    	 
+    	long startTS2 = System.nanoTime();
+    	con.createStatement().executeQuery("SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; ");
+    	long stopTS2 = System.nanoTime();
+    	long duration2 = stopTS2 - startTS2;
+    	float durationS2 = ((float) duration2)/1000000000;
+    	System.out.println("Complete Query 2! Elapsed time: " + durationS2 + " Seconds"); 
+    	System.out.println();
+        
     	
     }
     
-    //Hier die zwei Queries umschreiben, Zeit messen -> Siehe Programm1 !
     public static void rewrittenqueries(Connection con) throws SQLException{
+    	//first rewritten query
+    	System.out.println("Starting Query 3...");
     	
+    	long startTS3 = System.nanoTime();
+    	con.createStatement().executeQuery("SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\"  WHERE dept = 'Databases' GROUP BY dept ; ");
+    	long stopTS3 = System.nanoTime();
+    	long duration3 = stopTS3 - startTS3;
+    	float durationS3 = ((float) duration3)/1000000000;
+    	System.out.println("Complete Query 3! Elapsed time: " + durationS3 + " Seconds");
+    	System.out.println();
+    	
+    	//second rewritten query
+    	System.out.println("Starting Query 4...");
+    	
+    	long startTS4 = System.nanoTime();
+    	con.createStatement().executeQuery("SELECT name, grade FROM  \"Student\" WHERE grade = '5' ; ");
+    	long stopTS4 = System.nanoTime();
+    	long duration4 = stopTS4 - startTS4;
+    	float durationS4 = ((float) duration4)/1000000000;
+    	System.out.println("Complete Query 4! Elapsed time: " + durationS4 + " Seconds");
+    	System.out.println();
     }
 
 private static class Techdept {
@@ -215,4 +258,3 @@ private static class Techdept {
     
     }
 }
-
