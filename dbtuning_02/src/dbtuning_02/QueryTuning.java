@@ -17,11 +17,11 @@ import org.postgresql.copy.CopyManager;
 import org.postgresql.core.BaseConnection;
 
 public class QueryTuning {
-	
+
 	//Global Variables
 	private static ArrayList<Techdept> departments;
     private static Random gen = new Random();
-    
+
     public static void main(String[] args) throws Exception {
 		try {
 		    Class.forName ( "org.postgresql.Driver" );
@@ -31,9 +31,9 @@ public class QueryTuning {
 		    e.printStackTrace();
 		    return;
 		}
-	
+
 		//----------------------Connection to DB----------------------
-		
+
 		//DBTuningss2020
 		/*String host = "biber.cosy.sbg.ac.at";
 		String port = "5432";
@@ -41,15 +41,15 @@ public class QueryTuning {
 		String pwd = "huth8lithe5E";
 		String user = "ibrezovic";*/
 
-		
+
 		//Localhost
 		String host = "localhost";
 		String port = "5432";
 		String database = "postgres";
-		String pwd = "lovenia";
+		String pwd = "postgres";
 		String user = "postgres";
-		
-		
+
+
 		String url = "jdbc:postgresql://" + host + ":" + port + "/" + database;
 		Connection con = null;
 		try {
@@ -60,16 +60,18 @@ public class QueryTuning {
 		    e.printStackTrace();
 		    return;
 		}
-		
+
 		//----------------------Sequence Order BEGIN----------------------
 		createandclean(con);
 		filltableswithdata(con);
 		orignalqueries(con);
 		rewrittenqueries(con);
+		System.out.println("---EXPLAIN ANALYZE---");
+		explain_analyze(con);
 		System.out.println("DONE!");
 		//----------------------Sequence Order END------------------------
     }
-    
+
     //Creates the empty tables or cleans them if they existed befores
     private static void createandclean(Connection con) throws SQLException {
         System.out.print("Cleaning and Creating Tables... ");
@@ -82,7 +84,7 @@ public class QueryTuning {
                                       "	salary NUMERIC(8,2) NOT NULL,\n" +
                                       "	numfriends SMALLINT NOT NULL,\n" +
                                       " PRIMARY KEY (ssnum, name));");
-        
+
         con.createStatement().execute("DROP TABLE IF EXISTS \"Student\";");
         con.createStatement().execute("CREATE TABLE \"Student\" (\n" +
                                       "	ssnum INT NOT NULL UNIQUE,\n" +
@@ -90,27 +92,27 @@ public class QueryTuning {
                                       "	course VARCHAR(40) NOT NULL,\n" +
                                       "	grade SMALLINT NOT NULL,\n" +
                                       " PRIMARY KEY (ssnum, name));");
-        
+
         con.createStatement().execute("DROP TABLE IF EXISTS \"Techdept\";");
         con.createStatement().execute("CREATE TABLE \"Techdept\" (\n" +
                                       "	dept VARCHAR(40) NOT NULL UNIQUE,\n" +
                                       "	manager VARCHAR(40) NOT NULL,\n" +
                                       "	location VARCHAR(40) NOT NULL,\n" +
                                       " PRIMARY KEY (dept));");
-        
+
         con.createStatement().execute("CREATE UNIQUE INDEX employee_ssnum_unique_index ON \"Employee\" (ssnum);");
         con.createStatement().execute("CREATE UNIQUE INDEX employee_name_unique_index ON \"Employee\" (name);");
         con.createStatement().execute("CREATE INDEX employee_dept_index ON \"Employee\" (dept);");
-        
+
         con.createStatement().execute("CREATE UNIQUE INDEX student_ssnum_unique_index ON \"Student\" (ssnum);");
         con.createStatement().execute("CREATE UNIQUE INDEX student_name_unique_index ON \"Student\" (name);");
-        
+
         con.createStatement().execute("CREATE UNIQUE INDEX techdept_dept_unique_index ON \"Techdept\" (dept);");
         System.out.println("ok");
     }
-    
+
     //Fills the tables with random data
-    private static void filltableswithdata(Connection con) throws SQLException, IOException {	
+    private static void filltableswithdata(Connection con) throws SQLException, IOException {
     	CopyManager cm = new CopyManager((BaseConnection) con);
     	FileOutputStream os = new FileOutputStream("Techdept.tsv");
         OutputStreamWriter wr = new OutputStreamWriter(os);
@@ -119,11 +121,11 @@ public class QueryTuning {
         FileOutputStream os_employee = new FileOutputStream("Employee.tsv");
         OutputStreamWriter wr_employee = new OutputStreamWriter(os_employee);
 
-        
+
       //--------Create 10 Techdepartments and save them in ArrayList--------
     	System.out.println("Creating Departments...");
     	createDepartments();
-    	
+
     	//--------Create Departments--------
     	for (Techdept dept : departments) {
             wr.write(dept.getDept() + "\t" + dept.getManager() + "\t" + dept.getLocation() + "\n");
@@ -131,30 +133,30 @@ public class QueryTuning {
         wr.flush();
         wr.close();
         cm.copyIn("COPY \"Techdept\" FROM stdin", new FileInputStream("Techdept.tsv"));
-    	
+
     	//--------Create 100k students--------
         System.out.println("Creating Students...");
     	for(int i=0; i<100000; i++) {
-    		//ssnum, name, course, grade 
+    		//ssnum, name, course, grade
     		wr_student.write(i + "\t" + UUID.randomUUID().toString() + "\t" + UUID.randomUUID().toString() + "\t" + ThreadLocalRandom.current().nextInt(1,6) + "\n");
     	}
     	wr_student.flush();
     	wr_student.close();
     	cm.copyIn("COPY \"Student\" FROM stdin", new FileInputStream("Student.tsv"));
-    	
+
     	//--------Create 100k employees--------
     	System.out.println("Creating Employees...");
     	System.out.println();
     	for(int j=100000; j<200000; j++) {
     		String manager = null;
     		String dept = null;
-    		//In ~10% der Fälle soll random ein manager und ein dept gesetzt werden
+    		//In ~10% der Fï¿½lle soll random ein manager und ein dept gesetzt werden
     		if(ThreadLocalRandom.current().nextInt(1,11) == 5) {
     			int random = ThreadLocalRandom.current().nextInt(0,10);
     			manager = departments.get(random).getManager();
     			dept = departments.get(random).getDept();
     		}
-    		
+
     		//ssnum, name, manager, dept, salary, numfriends
     		wr_employee.write(j + "\t" + UUID.randomUUID().toString() + "\t" + manager + "\t" + dept + "\t" + ThreadLocalRandom.current().nextInt(2000,8000) + "\t" + ThreadLocalRandom.current().nextInt(2,12) +"\n");
     	}
@@ -162,19 +164,19 @@ public class QueryTuning {
     	wr_employee.close();
     	cm.copyIn("COPY \"Employee\" FROM stdin", new FileInputStream("Employee.tsv"));
     }
-    
+
     //Create 10 Techdepartments and save them in ArrayList
     private static void createDepartments() {
     	String[] managerPool = {"Mia Wagner", "David Gruber", "Maria Winkler", "Sophia Huber", "Helena Weber", "Emma Kocher", "Max Steiner", "Philipp Moser", "Fabian Mayer", "Franz Pichler"};
-        String[] locationPool = {"Salzburg", "Wien", "Graz", "Klagenfurt", "Villach", "Innsbruck", "Linz", "Bregenz", "Eisenstadt", "Wels"};     
+        String[] locationPool = {"Salzburg", "Wien", "Graz", "Klagenfurt", "Villach", "Innsbruck", "Linz", "Bregenz", "Eisenstadt", "Wels"};
         departments = new ArrayList<Techdept>(10);
-         
+
         departments.add(new Techdept("Development", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("Systems Engineering", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("AI", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("Research", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("IT", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
-        departments.add(new Techdept("Hardware Development", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));              
+        departments.add(new Techdept("Hardware Development", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("Webdesign", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("Databases", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
         departments.add(new Techdept("IT Security", managerPool[gen.nextInt(10)], locationPool[gen.nextInt(10)]));
@@ -182,9 +184,9 @@ public class QueryTuning {
     }
 
     public static void orignalqueries(Connection con) throws SQLException{
-    	//first query
+    	//first query: Do not use having where "where" is sufficient
     	System.out.println("Starting Query 1...");
-    	
+
     	long startTS1 = System.nanoTime();
     	con.createStatement().execute("SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\" GROUP BY dept HAVING dept = 'Databases' ; ");
     	long stopTS1 = System.nanoTime();
@@ -192,69 +194,81 @@ public class QueryTuning {
     	float durationS1 = ((float) duration1)/1000000000;
     	System.out.println("Complete Query 1! Elapsed time: " + durationS1 + " Seconds");
     	System.out.println();
-    	
-    	//second query
+
+    	//second query: Do not use SELECT MAX/SELECT MIN where you know the MAX/MIN
     	System.out.println("Starting Query 2...");
+    	
     	String qry2 = "SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; " ;
-    	 
     	long startTS2 = System.nanoTime();
     	con.createStatement().executeQuery("SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; ");
     	long stopTS2 = System.nanoTime();
     	long duration2 = stopTS2 - startTS2;
     	float durationS2 = ((float) duration2)/1000000000;
-    	System.out.println("Complete Query 2! Elapsed time: " + durationS2 + " Seconds"); 
+    	System.out.println("Complete Query 2! Elapsed time: " + durationS2 + " Seconds");
     	System.out.println();
-        
-    	
+
+
     }
-    
+
     public static void rewrittenqueries(Connection con) throws SQLException{
-    	//first rewritten query
-    	System.out.println("Starting Query 3...");
-    	
+    	//first query: rewritten to "where"
+    	System.out.println("Starting Query 1 Rewritten...");
+
     	long startTS3 = System.nanoTime();
     	con.createStatement().executeQuery("SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\"  WHERE dept = 'Databases' GROUP BY dept ; ");
     	long stopTS3 = System.nanoTime();
     	long duration3 = stopTS3 - startTS3;
     	float durationS3 = ((float) duration3)/1000000000;
-    	System.out.println("Complete Query 3! Elapsed time: " + durationS3 + " Seconds");
+    	System.out.println("Complete Query 1 Rewritten! Elapsed time: " + durationS3 + " Seconds");
     	System.out.println();
-    	
-    	//second rewritten query
-    	System.out.println("Starting Query 4...");
-    	
+
+    	//second query: rewritten to known max
+    	System.out.println("Starting Query 2 Rewritten...");
+
     	long startTS4 = System.nanoTime();
     	con.createStatement().executeQuery("SELECT name, grade FROM  \"Student\" WHERE grade = '5' ; ");
     	long stopTS4 = System.nanoTime();
     	long duration4 = stopTS4 - startTS4;
     	float durationS4 = ((float) duration4)/1000000000;
-    	System.out.println("Complete Query 4! Elapsed time: " + durationS4 + " Seconds");
+    	System.out.println("Complete Query 2 Rewritten! Elapsed time: " + durationS4 + " Seconds");
     	System.out.println();
     }
+    
+    public static void explain_analyze(Connection con) throws SQLException{
+    	//Q1
+    	ResultSet rs = con.createStatement().executeQuery("explain analyze SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\" GROUP BY dept HAVING dept = 'Databases' ; ");
+    	while (rs.next())
+    	{
+    	   System.out.println(rs.getString(1)); //+ ", "+ rs.getString(1));
+    	}
+    	//Q2
+    	//con.createStatement().executeQuery("SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; ");
+    	
+    }	
 
 private static class Techdept {
-    
+
     private String dept;
     private String manager;
     private String location;
-        
+
     private Techdept(String dept, String manager, String location) {
     	this.dept = dept;
     	this.manager = manager;
     	this.location = location;
     	}
-    
+
     private String getDept() {
     	return dept;
     	}
-    
+
     private String getManager() {
     	return manager;
     	}
-    
+
     private String getLocation() {
     	return location;
     	}
-    
+
     }
 }
