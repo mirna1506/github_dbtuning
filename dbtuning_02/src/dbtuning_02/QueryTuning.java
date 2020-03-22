@@ -46,7 +46,7 @@ public class QueryTuning {
 		String host = "localhost";
 		String port = "5432";
 		String database = "postgres";
-		String pwd = "postgres";
+		String pwd = "lovenia";
 		String user = "postgres";
 
 
@@ -66,8 +66,6 @@ public class QueryTuning {
 		filltableswithdata(con);
 		orignalqueries(con);
 		rewrittenqueries(con);
-		System.out.println("---EXPLAIN ANALYZE---");
-		explain_analyze(con);
 		System.out.println("DONE!");
 		//----------------------Sequence Order END------------------------
     }
@@ -186,9 +184,12 @@ public class QueryTuning {
     public static void orignalqueries(Connection con) throws SQLException{
     	//first query: Do not use having where "where" is sufficient
     	System.out.println("Starting Query 1...");
+    	System.out.println("---EXPLAIN ANALYZE QUERY 1---");
+    	
+    	String qry1 = "SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\" GROUP BY dept HAVING dept = 'Databases' ; "; 
 
     	long startTS1 = System.nanoTime();
-    	con.createStatement().execute("SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\" GROUP BY dept HAVING dept = 'Databases' ; ");
+    	explain_analyze(con, qry1);
     	long stopTS1 = System.nanoTime();
     	long duration1 = stopTS1 - startTS1;
     	float durationS1 = ((float) duration1)/1000000000;
@@ -196,26 +197,29 @@ public class QueryTuning {
     	System.out.println();
 
     	//second query: Do not use SELECT MAX/SELECT MIN where you know the MAX/MIN
+    	System.out.println("---EXPLAIN ANALYZE QUERY 2---");
     	System.out.println("Starting Query 2...");
     	
     	String qry2 = "SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; " ;
     	long startTS2 = System.nanoTime();
-    	con.createStatement().executeQuery("SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; ");
+    	explain_analyze(con, qry2);
     	long stopTS2 = System.nanoTime();
     	long duration2 = stopTS2 - startTS2;
     	float durationS2 = ((float) duration2)/1000000000;
     	System.out.println("Complete Query 2! Elapsed time: " + durationS2 + " Seconds");
     	System.out.println();
 
-
     }
 
     public static void rewrittenqueries(Connection con) throws SQLException{
     	//first query: rewritten to "where"
+    	System.out.println("---EXPLAIN ANALYZE QUERY 1 REWRITTEN---");
     	System.out.println("Starting Query 1 Rewritten...");
 
+    	String qry3 = "SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\"  WHERE dept = 'Databases' GROUP BY dept ; " ;
+    	
     	long startTS3 = System.nanoTime();
-    	con.createStatement().executeQuery("SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\"  WHERE dept = 'Databases' GROUP BY dept ; ");
+    	explain_analyze(con, qry3);
     	long stopTS3 = System.nanoTime();
     	long duration3 = stopTS3 - startTS3;
     	float durationS3 = ((float) duration3)/1000000000;
@@ -223,10 +227,13 @@ public class QueryTuning {
     	System.out.println();
 
     	//second query: rewritten to known max
+    	System.out.println("---EXPLAIN ANALYZE QUERY 2 REWRITTEN---");
     	System.out.println("Starting Query 2 Rewritten...");
 
+    	String qry4 = "SELECT name, grade FROM  \"Student\" WHERE grade = '5' ; " ;
+    	
     	long startTS4 = System.nanoTime();
-    	con.createStatement().executeQuery("SELECT name, grade FROM  \"Student\" WHERE grade = '5' ; ");
+    	explain_analyze(con, qry4);
     	long stopTS4 = System.nanoTime();
     	long duration4 = stopTS4 - startTS4;
     	float durationS4 = ((float) duration4)/1000000000;
@@ -234,16 +241,12 @@ public class QueryTuning {
     	System.out.println();
     }
     
-    public static void explain_analyze(Connection con) throws SQLException{
-    	//Q1
-    	ResultSet rs = con.createStatement().executeQuery("explain analyze SELECT AVG(salary) AS avgsalary, dept FROM  \"Employee\" GROUP BY dept HAVING dept = 'Databases' ; ");
+    public static void explain_analyze(Connection con, String str) throws SQLException{
+    	ResultSet rs = con.createStatement().executeQuery("explain analyze " + str );
     	while (rs.next())
     	{
-    	   System.out.println(rs.getString(1)); //+ ", "+ rs.getString(1));
+    	   System.out.println(rs.getString(1));
     	}
-    	//Q2
-    	//con.createStatement().executeQuery("SELECT name, grade FROM \"Student\" WHERE grade = (SELECT MAX(grade) FROM \"Student\") ; ");
-    	
     }	
 
 private static class Techdept {
