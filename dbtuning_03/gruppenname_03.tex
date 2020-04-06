@@ -1,0 +1,196 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[top=1.5cm]{geometry}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+
+\newcommand{\youranswerhere}{[Your answer goes here \ldots]}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+\lstdefinestyle{dbtsql}{
+  language=SQL,
+  basicstyle=\small\ttfamily,
+  keywordstyle=\color{magenta!75!black},
+  stringstyle=\color{green!50!black},
+  showspaces=false,
+  showstringspaces=false,
+  commentstyle=\color{gray}}
+
+\title{
+  \textbf{\large Assignment 3} \\
+  Index Tuning \\
+  {\large Database Tuning}}
+
+\author{
+  Gruppe J \\
+  \large Brezovic Ivica, 11702570 \\
+  \large Demir Cansu, 11700525 \\
+  \large Mrazovic Mirna, 11700383
+}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Database system and version:} \emph{PostgreSQL 12.2}
+
+\subsection{Index Data Structures}
+
+Which index data structures (e.g., B$^+$ tree index) are supported?
+ 
+\begin{itemize}
+    \item B-tree
+    \item Hash
+    \item GiST (Generalized Search Tree)
+    \item SP-GiST
+    \item GIN (Generalized Inverted Index)
+    \item BRIN (Block Range Index) 
+\end{itemize}
+
+
+\subsection{Clustering Indexes}
+
+Discuss how the system supports clustering indexes, in particular:
+
+\paragraph{a)}
+
+How do you create a clustering index on \texttt{ssnum}? Show the query.\footnote{Give the queries for creating a hash index \emph{and} a B$^+$ tree index if both of them are supported.}
+
+Ein Clustering-Index wird erstellt, indem ein Index angelegt und die Tabelle mit Hilfe des Indexes geclustert wird (d.h. die Daten werden physisch sortiert). Zusätzlich wird empfohlen, auch ANALYZE auf der geclusterten Tabelle laufen zu lassen. Dies sollte getan werden, da der Planner Statistiken über die Reihenfolge der Tabellen aufzeichnet, so dass die Information über die neue Sortierung durch Ausführen von ANALYZE schlechte Query Plans verhindert. 
+
+\newpage
+Während PostgreSQL Hash-Indexes unterstützt (wir könnten einen erstellen, indem wir:
+
+\begin{lstlisting}[style=dbtsql]
+CREATE INDEX employee_ssnum_hash_idx ON "Employee" USING HASH (ssnum);
+\end{lstlisting}
+
+ausgeben), ist es nicht möglich, Clustering-Hash-Indexes zu erstellen 
+\begin{lstlisting}[style=dbtsql]
+(CLUSTER "Employee" USING employee_ssnum_hash_idx;
+\end{lstlisting} 
+würde \textit{ERROR: kann nicht auf dem Index "employee\_ssnum\_hash\_idx" clustern, weil die Zugriffsmethode kein Clustering unterstützt} ausgeben.) \newline
+
+
+Die Befehle zum Erstellen eines Clustering-B-Baumindexes lauten wie folgt:
+\begin{lstlisting}[style=dbtsql]
+CREATE INDEX employee_ssnum_btree_idx ON "Employee" USING BTREE (ssnum);
+
+CLUSTER "Employee" USING employee_ssnum_btree_idx; ANALYZE "Employee";
+\end{lstlisting}
+
+\paragraph{b)}
+
+Are clustering indexes on non-key attributes supported, e.g., on \texttt{name}? Show the query.
+
+Ja, Clustering Indexes auf non-key attributes werden unterstützt. Das Verfahren zum Anlegen eines Clusteringindex auf name lautet wie folgt:
+
+\begin{lstlisting}[style=dbtsql]
+CREATE INDEX employee_name_btree_idx ON "Employee" USING BTREE (name);
+
+CLUSTER "Employee" USING employee_name_btree_idx; ANALYZE "Employee";
+\end{lstlisting}
+
+Da wir jetzt einen Clustering-Index auf name haben, ist unser Index auf ssnum kein Clustering-Index mehr, da die Employees nun physisch nach name sortiert sind.
+
+\paragraph{c)}
+
+Is the clustering index dense or sparse?
+
+Da wir beim Clustering einen vorhandenen Index verwenden, hängt es vom Indextyp ab, ob der Clustering index dense oder sparse ist. Wenn wir beispielsweise einen GIN-Index verwenden würden, wäre unser Clustering-Index sparse, während er dense wäre, wenn wir einen B-Baum-Index verwenden würden.
+
+\paragraph{d)}
+
+How does the system deal with overflows in clustering indexes? How is the fill factor controlled?
+
+Mit Overflows hätten wir nur dann zu tun, wenn wir echte clustering Indexes hätten. Da ein clustering Index in einen non-clustering Index "converted" wird, wenn ein Tupel in die Tabelle eingefügt wird, können wir bei clustering Indexes keine Overflows haben.
+Der fill factor beim Erstellen eines Index wird mit der Option \textit{“WITH (fillfactor = x)”} gesteuert, wobei x ein integer Wert zwischen 10 und 100 ist, der den fill factor in Prozent darstellt (Standard für B-Baum-Indizes ist 90).\newline
+Bei Verwendung der Option fillfactor können nur die Indextypen B-Baum, Hash, GiST und SP-GiST verwendet werden. Wenn wir also einen B-Baum-Index auf ssnum mit einem fill factor von 60 erstellen würden, so würden wir die folgende Query ausführen:
+
+\begin{lstlisting}[style=dbtsql]
+CREATE INDEX employee_ssnum_ff_btree_idx ON "Employee" 
+USING BTREE (ssnum) WITH (fillfactor = 60);
+\end{lstlisting}
+
+\paragraph{e)}
+
+Discuss any further characteristics of the system related to clustering indexes that are relevant to a database tuner.
+
+Es gibt zwei mögliche interne Wege für die Erstellung eines Cluster-Index: ein Index-Scan auf dem gegebenen Index oder ein sequentieller Scan mit anschließender Sortierung (letzteres funktioniert nur, wenn der Index ein B-Baum ist). Auf der Grundlage von Statistiken und Planner Calculations wird die (wahrscheinlich) schnellere Methode gewählt. Bei der Verwendung eines Index Scans wird freier Platz benötigt, da das System bei dieser Methode temporäre Tabellen anlegt. Wenn ein sequentieller Scan anstelle des Index Scan verwendet wird, erstellt das System eine temporäres Sort File. Das bedeutet, dass der Platzbedarf bis zum Zweifachen der Größe der Tabelle + dem Platz für den Index beträgt. Obwohl diese Methode schneller als die erstgenannte ist, können wir sie abschalten, indem wir in der Konfigurationsdatei enable\_sort auf off setzen, wenn wir eine so hohe Plattenplatznutzung nicht tolerieren können.
+
+\subsection{Non-Clustering Indexes}
+
+Discuss how the system supports non-clustering indexes, in particular:
+
+\paragraph{a)}
+
+How do you create a combined, non-clustering index on \texttt{(dept,salary)}? Show the query.$^1$
+
+In PostgreSQL sind alle Indizes standardmäßig Nicht-Clustering-Indizes, wenn sie erstellt werden, nur Sie
+müssen einen neuen Index für die Attribute erstellen, die der Index enthalten soll.
+
+\begin{lstlisting}[style=dbtsql]
+CREATE INDEX employee_non_clustered_idx ON "Employee" (dept, salary);
+\end{lstlisting}
+
+\paragraph{b)}
+
+Can the system take advantage of covering indexes? What if the index covers the query, but the condition is not a prefix of the attribute sequence \texttt{(dept,salary)}?
+
+Mit einem covering Index kann ein Benutzer einen Index-Only-Scan durchführen, wenn die Auswahlliste in der Abfrage mit den im Index enthaltenen Spalten übereinstimmt.
+
+Falls das nicht der Fall ist, kann man Spalten für den Index mit dem Schlüsselwort "INCLUDE" angeben. 
+
+\paragraph{c)}
+
+Discuss any further characteristics of the system related to non-clustering indexes that are relevant to a database tuner.
+
+\textbf{Indexes and ORDER BY:} Ein Index kann nicht nur die Zeilen finden die von einer Abfrage zurückgegeben werden sollen, sondern sie auch in einer bestimmten sortierten Reihenfolge liefern. 
+
+Ein Index, der in aufsteigender Reihenfolge mit Nullen zuerst gespeichert wird, kann entweder ORDER BY x ASC NULLS FIRST oder ORDER BY x DESC NULLS LAST erfüllen, je nachdem, in welche Richtung er gescannt wird.
+
+Offensichtlich sind solche Indizes eine ziemlich spezielle Funktion, aber sie können für bestimmte Abfragen enorme Beschleunigungen bewirken.
+
+\textbf{Partial Indexes:} Ein Teilindex ist ein Index, der über einer Teilmenge einer Tabelle erstellt wird. Die Teilmenge wird durch einen bedingten Ausdruck definiert. Der bedingte Ausdruck wird als Prädikat des Teilindex bezeichnet. Der Index enthält nur Einträge für die Tabellenzeilen, die das Prädikat erfüllen.
+
+Ein Hauptgrund für die Verwendung eines Teilindex besteht darin, die Indizierung gemeinsamer Werte zu vermeiden. Da eine Abfrage, die nach einem gemeinsamen Wert sucht, den Index ohnehin nicht verwendet, macht es keinen Sinn, diese Zeilen überhaupt im Index zu belassen.
+
+Dies reduziert die Größe des Index, wodurch die Abfragen, die den Index verwenden, beschleunigt werden. Dies beschleunigt auch viele Tabellenaktualisierungsvorgänge, da der Index nicht in allen Fällen aktualisiert werden muss.
+
+\subsection{Key Compression and Page Size}
+
+If your system supports B$^+$ trees, what kind of key compression (if any) is supported? How large is the default disk page? Can it be changed?
+
+Die Größe einer Festplattenseite wird durch den Wert von BLCKSZ beim Erstellen des Servers bestimmt.
+Der Standardwert ist 8 kB.
+
+Ab Juli 2017 gibt es einen Entwurf für die Schlüsselnormalisierung, der Verbesserungen bei der Darstellung von Indextupeln wie Präfixkomprimierung und Suffixkürzung ermöglicht. Das bedeutet, dass die Schlüsselkomprimierung noch nicht implementiert ist.
+
+
+
+\subsection*{Time Spent on this Assignment}
+
+Time in hours per person: \textbf{6}
+
+\subsection*{References}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c}
+    \hline
+    https://www.postgresql.org/docs/9.6/indexes-types.html \tabularnewline
+    https://www.postgresql.org/docs/12/sql-cluster.html \tabularnewline
+    http://www.sai.msu.su/~megera/postgres/gist/doc/intro.shtml \tabularnewline
+    https://www.postgresql.org/docs/9.6/gist-intro.html \tabularnewline
+    https://www.postgresql.org/docs/12/indexes-types.html \tabularnewline
+    https://www.postgresql.org/docs/current/indexes-index-only-scans.html \tabularnewline
+    https://www.postgresql.org/docs/12/indexes-ordering.html \tabularnewline
+    https://www.postgresql.org/docs/12/indexes-partial.html \tabularnewline
+    \hline
+  \end{tabular}
+\end{table}
+\end{document}
