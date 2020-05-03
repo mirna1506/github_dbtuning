@@ -1,0 +1,1000 @@
+books/acm/kim95/AnnevelinkACFHK95	incollection	Object SQL - A Language for the Design and Implementation of Object Databases.	Modern Database Systems	1995	
+books/acm/kim95/Blakeley95	incollection	OQL[C++]: Extending C++ with an Object Query Capability.	Modern Database Systems	1995	
+books/acm/kim95/BreitbartGS95	incollection	Transaction Management in Multidatabase Systems.	Modern Database Systems	1995	
+books/acm/kim95/BreitbartR95	incollection	Overview of the ADDS System.	Modern Database Systems	1995	
+books/acm/kim95/ChristodoulakisK95	incollection	Multimedia Information Systems: Issues and Approaches.	Modern Database Systems	1995	
+books/acm/kim95/DayalHW95	incollection	Active Database Systems.	Modern Database Systems	1995	
+books/acm/kim95/DittrichD95	incollection	Where Object-Oriented DBMSs Should Do Better: A Critique Based on Early Experiences.	Modern Database Systems	1995	
+books/acm/kim95/Garcia-MolinaH95	incollection	Distributed Databases.	Modern Database Systems	1995	
+books/acm/kim95/Goodman95	incollection	An Object-Oriented DBMS War Story: Developing a Genome Mapping Database in C++.	Modern Database Systems	1995	
+books/acm/kim95/Kaiser95	incollection	Cooperative Transactions for Multiuser Environments.	Modern Database Systems	1995	
+books/acm/kim95/KelleyGKRG95	incollection	Schema Architecture of the UniSQL/M Multidatabase System	Modern Database Systems	1995	
+books/acm/kim95/KemperM95	incollection	Physical Object Management.	Modern Database Systems	1995	
+books/acm/kim95/Kim95	incollection	Introduction to Part 1: Next-Generation Database Technology.	Modern Database Systems	1995	
+books/acm/kim95/Kim95a	incollection	Object-Oriented Database Systems: Promises, Reality, and Future.	Modern Database Systems	1995	
+books/acm/kim95/Kim95b	incollection	Introduction to Part 2: Technology for Interoperating Legacy Databases.	Modern Database Systems	1995	
+books/acm/kim95/KimCGS95	incollection	On Resolving Schematic Heterogeneity in Multidatabase Systems.	Modern Database Systems	1995	
+books/acm/kim95/KimG95	incollection	Requirements for a Performance Benchmark for Object-Oriented Database Systems.	Modern Database Systems	1995	
+books/acm/kim95/KimK95	incollection	On View Support in Object-Oriented Databases Systems.	Modern Database Systems	1995	
+books/acm/kim95/Kowalski95	incollection	The POSC Solution to Managing E&P Data.	Modern Database Systems	1995	
+books/acm/kim95/KriegerA95	incollection	C++ Bindings to an Object Database.	Modern Database Systems	1995	
+books/acm/kim95/Lunt95	incollection	Authorization in Object-Oriented Databases.	Modern Database Systems	1995	
+books/acm/kim95/MengY95	incollection	Query Processing in Multidatabase Systems.	Modern Database Systems	1995	
+books/acm/kim95/Motro95	incollection	Management of Uncerainty in database Systems.	Modern Database Systems	1995	
+books/acm/kim95/Omiecinski95	incollection	Parallel Relational Database Systems.	Modern Database Systems	1995	
+books/acm/kim95/OzsuB95	incollection	Query Processing in Object-Oriented Database Systems.	Modern Database Systems	1995	
+books/acm/kim95/RusinkiewiczS95	incollection	Specification and Execution of Transactional Workflows.	Modern Database Systems	1995	
+books/acm/kim95/Samet95	incollection	Spatial Data Structures.	Modern Database Systems	1995	
+books/acm/kim95/SametA95	incollection	Spatial Data Models and Query Processing.	Modern Database Systems	1995	
+books/acm/kim95/ShanADDK95	incollection	Pegasus: A Heterogeneous Information Management System.	Modern Database Systems	1995	
+books/acm/kim95/Snodgrass95	incollection	Temporal Object-Oriented Databases: A Critical Comparison.	Modern Database Systems	1995	
+books/acm/kim95/SoleyK95	incollection	The OMG Object Model.	Modern Database Systems	1995	
+books/acm/kim95/Stout95	incollection	EDA/SQL.	Modern Database Systems	1995	
+books/acm/kim95/Thompson95	incollection	The Changing Database Standards Landscape.	Modern Database Systems	1995	
+books/acm/Kim95	book	Modern Database Systems: The Object Model, Interoperability, and Beyond.	Modern Database Systems	1995	ACM Press and Addison-Wesley
+books/ap/MarshallO79	book	Inequalities: Theory of Majorization and Its Application.		1979	Academic Press
+books/aw/kimL89/BjornerstedtH89	incollection	Version Control in an Object-Oriented Architecture.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/BretlMOPSSWW89	incollection	The GemStone Data Management System.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/CareyDRS89	incollection	Storage Management in EXODUS.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/Decouchant89	incollection	A Distributed Object Manager for the Smalltalk-80 System.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/DiederichM89	incollection	Objects, Messages, and Rules in Database Design.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/EllisG89	incollection	Active Objects: Ealities and Possibilities.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/FishmanABCCDHHKLLMNRSW89	incollection	Overview of the Iris DBMS.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/KimBCGW89	incollection	Features of the ORION Object-Oriented Database System.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/KimKD89	incollection	Indexing Techniques for Object-Oriented Databases.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/King89	incollection	My Cat Is Object-Oriented.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/Maier89	incollection	Making Database Systems Fast Enough for CAD Applications.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/MellenderRS89	incollection	Optimizing Smalltalk Message Performance.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/Moon89	incollection	The Common List Object-Oriented Programming Language Standard.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/Moss89	incollection	Object Orientation as Catalyst for Language-Database Inegration.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/Nierstrasz89	incollection	A Survey of Object-Oriented Concepts.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/NierstraszT89	incollection	Integrated Office Systems.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/Russinoff89	incollection	Proteus: A Frame-Based Nonmonotonic Inference System.	Object-Oriented Concepts, Databases, and Applications	1989	ACM Press and Addison-Wesley
+books/aw/kimL89/SkarraZ89	incollection	Concurrency Control and Object-Oriented Databases.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/SteinLU89	incollection	A Shared View of Sharing: The Treaty of Orlando.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/TarltonT89	incollection	Pogo: A Declarative Representation System for Graphics.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/TomlinsonS89	incollection	Concurrent Object-Oriented Programming Languages.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/TsichritzisN89	incollection	Directions in Object-Oriented Research.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/Wand89	incollection	A Proposal for a Formal Model of Objects.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/kimL89/WeiserL89	incollection	OZ+: An Object-Oriented Database System.	Object-Oriented Concepts, Databases, and Applications	1989	
+books/aw/stonebraker86/RoweS86	incollection	The Commercial INGRES Epilogue.	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86	incollection	Design of Relational Systems (Introduction to Section 1).	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86a	incollection	Supporting Studies on Relational Systems (Introduction to Section 2).	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86b	incollection	Distributed Database Systems (Introduction to Section 3).	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86c	incollection	The Design and Implementation of Distributed INGRES.	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86d	incollection	User Interfaces for Database Systems (Introduction to Section 4).	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86e	incollection	Extended Semantics for the Relational Model (Introduction to Section 5).	The INGRES Papers	1986	
+books/aw/stonebraker86/Stonebraker86f	incollection	Database Design (Introduction to Section 6).	The INGRES Papers	1986	
+books/aw/stonebraker86/X86	incollection	Title, Preface, Contents.	The INGRES Papers	1986	
+books/aw/stonebraker86/X86a	incollection	References.	The INGRES Papers	1986	
+books/aw/Knuth86a	book	TeX: The Program		1986	Addison-Wesley
+books/aw/AbiteboulHV95	book	Foundations of Databases.		1995	Addison-Wesley
+books/aw/Lamport86	book	LaTeX: User's Guide & Reference Manual		1986	Addison-Wesley
+books/aw/AhoHU74	book	The Design and Analysis of Computer Algorithms.		1974	Addison-Wesley
+books/aw/Lamport2002	book	Specifying Systems, The TLA+ Language and Tools for Hardware and Software Engineers		2002	Addison-Wesley
+books/aw/AhoHU83	book	Data Structures and Algorithms.		1983	Addison-Wesley
+books/aw/LewisBK01	book	Databases and Transaction Processing: An Application-Oriented Approach		2001	Addison-Wesley
+books/aw/AhoKW88	book	The AWK Programming Language		1988	Addison-Wesley
+books/aw/LindholmY97	book	The Java Virtual Machine Specification		1997	Addison-Wesley
+books/aw/AhoSU86	book	Compilers: Princiles, Techniques, and Tools.		1986	Addison-Wesley
+books/aw/Sedgewick83	book	Algorithms		1983	Addison-Wesley
+books/aw/ArnoldG96	book	The Java Programming Language		1996	Addison-Wesley
+books/aw/Sedgewick88	book	Algorithms, 2nd Edition		1988	Addison-Wesley
+books/aw/ArnoldG99	book	The Java Programming Language, Second Edition		1999	Addison-Wesley
+books/aw/SilberschatzG94	book	Operating System Concepts, 4th edition.		1994	Addison-Wesley
+books/aw/ArnoldGH00	book	The Java Programming Language, Third Edition		2000	Addison-Wesley
+books/aw/Knuth86	book	The TeXbook		1986	Addison-Wesley
+books/aw/Baeza-YatesR99	book	Modern Information Retrieval		1999	ACM Press / Addison-Wesley
+books/aw/Sowa84	book	Conceptual Structures: Information Processing in Mind and Machine		1984	Addison-Wesley
+books/aw/BernsteinHG87	book	Concurrency Control and Recovery in Database Systems.		1987	Addison-Wesley
+books/aw/Spinellis03	book	Code Reading: The Open Source Perspective		2003	Addison-Wesley
+books/aw/BertinoCZ2001	book	Intelligent Database Systems		2001	Addison-Wesley
+books/aw/Stein95	book	How to Set Up and Maintain a World Wide Web Site: The Guide for Information Providers.		1995	Addison-Wesley
+books/aw/BertinoM93	book	Object-Oriented Database Systems		1993	Addison-Wesley
+books/aw/Stevens92	book	Advanced Programming in the UNIX Environment		1992	Addison-Wesley
+books/aw/Bratko90	book	PROLOG Programming for Artificial Intelligence, Second Edition		1990	Addison-Wesley
+books/aw/Stevens94	book	TCP/IP Illustrated, Volume 1: The Protocols		1994	Addison-Wesley
+books/aw/CastanoFMS95	book	Database Security.		1995	Addison-Wesley & ACM Press
+books/aw/Stevens96	book	TCP/IP Illustrated, Volume 3: TCP for Transactions, HTTP, NNTP, and the UNIX Domain Protocolls		1996	Addison-Wesley
+books/aw/Cattell91	book	Object Data Management: Object-Oriented and Extended Relational Database Systems		1991	Addison-Wesley
+books/aw/Cattell94	book	Object Data Management: Object-Oriented and Extended Relational Database Systems (Revised Edition)		1994	Addison-Wesley
+books/aw/Stroustrup86	book	The C++ Programming Language, First Edition		1986	Addison-Wesley
+books/aw/CeriF97	book	Designing Database Applications with Objects and Rules: The IDEA Methodology		1997	Addison-Wesley
+books/aw/Stroustrup91	book	The C++ Programming Language, Second Edition		1991	Addison-Wesley
+books/aw/Chan99	book	The Java Developers Almanac 1999		1999	Addison-Wesley
+books/aw/TanSK2005	book	Introduction to Data Mining		2005	Addison-Wesley
+books/aw/ChanL97	book	The Java Class Libraries - An Annotated Reference		1997	Addison-Wesley
+books/aw/Vossen90	book	Datenmodelle, Datenbanksprachen und Datenbank-Management-Systeme		1990	Addison-Wesley
+books/aw/ChanL98	book	The Java Class Libraries, Second Edition, Volume 2		1998	Addison-Wesley
+books/aw/Vossen94	book	Datenmodelle, Datenbanksprachen und Datenbank-Management-Systeme. 2. Auflage		1994	Addison-Wesley
+books/aw/ChanLK98	book	The Java Class Libraries, Second Edition, Volume 1		1998	Addison-Wesley
+books/aw/VossenW90	book	Das DB2-Handbuch.		1990	Addison-Wesley
+books/aw/ChanLK99	book	The Java Class Libraries, Second Edition, Volume 1, Supplement for the Java 2 Platform Standard Edition, v1.2		1999	Addison-Wesley
+books/aw/WeigendG94	book	Time Series Prediction: Forecasting the Future and Understanding the Past.		1994	Addison-Wesley
+books/aw/Codd90	book	The Relational Model for Database Management, Version 2		1990	Addison-Wesley
+books/aw/WilsonK00	book	Java Platform Performance - Strategies and Tactics		2000	Addison-Wesley
+books/aw/Coplien92	book	Advanced C++: Programming Syles and Idioms		1992	Addison-Wesley
+books/aw/Das92	book	Deductive Databases and Logic Programming		1992	Addison-Wesley
+books/aw/Wolfe96	book	High performance compilers for parallel computing		1996	Addison-Wesley
+books/aw/Date75	book	An Introduction to Database Systems		1975	Addison-Wesley
+books/aw/WrightS95	book	TCP/IP Illustrated, Volume 2: The Implementation		1995	Addison-Wesley
+books/aw/Date77	book	An Introduction to Database Systems, 2nd Edition		1977	Addison-Wesley
+books/aw/Zipf49	book	Human Behaviour and the Principle of Least Effort: an Introduction to Human Ecology		1949	Addison-Wesley
+books/aw/Date81	book	An Introduction to Database Systems, 3rd Edition		1981	Addison-Wesley
+books/aw/Stonebraker86	book	The INGRES Papers: Anatomy of a Relational Database System		1986	Addison-Wesley
+books/aw/Date83	book	An Introduction to Database Systems, Volume II.		1983	Addison-Wesley
+books/aw/Date84	book	A Guide to DB2, 1st Edition		1984	Addison-Wesley
+books/aw/Date86	book	An Introduction to Database Systems, Volume I, 4th Edition.		1986	Addison-Wesley
+books/aw/Date90	book	An Introduction to Database Systems, Volume I, 5th Edition.		1990	Addison-Wesley
+books/aw/Date95	book	An Introduction to Database Systems, 6th Edition.		1995	Addison-Wesley
+books/aw/DateD92	book	Relational Database Writings 1989-1991		1992	Addison-Wesley
+books/aw/DateD93	book	A Guide to SQL Standard, 3rd Edition		1993	Addison-Wesley
+books/aw/DateD97	book	A Guide to SQL Standard, 4th Edition		1997	Addison-Wesley
+books/aw/DateW88	book	A Guide to DB2, 2nd Edition		1988	Addison-Wesley
+books/aw/DateW90	book	A Guide to DB2, 3rd Edition		1990	Addison-Wesley
+books/aw/Denning82	book	Cryptography and Data Security		1982	Addison-Wesley
+books/aw/EllisS90	book	The Annotated C++ Reference Manual.		1990	Addison-Wesley
+books/aw/FieldH88	book	Functional Programming		1988	Addison-Wesley
+books/aw/GardarinV89	book	Relational Databases and Knowledge Bases		1989	Addison-Wesley
+books/aw/GazdarM89	book	Natural Language Processing in PROLOG		1989	Addison-Wesley
+books/aw/Goldberg89	book	Genetic Algorithms in Search Optimization and Machine Learning		1989	Addison-Wesley
+books/aw/GoldbergR83	book	Smalltalk-80: The Language and Its Implementation.		1983	Addison-Wesley
+books/aw/GoslingJS96	book	The Java Language Specification.		1996	Addison-Wesley
+books/aw/Hanson1995	book	A Retargetable C Compiler: Design and Implementation		1995	Addison Wesley
+books/aw/Heuer92	book	Objektorientierte Datenbanken: Konzepte, Modelle, Systeme.		1992	Addison-Wesley
+books/aw/Heuer97	book	Objektorientierte Datenbanken: Konzepte, Modelle, Systeme, 2. Auflage.		1997	Addison-Wesley
+books/aw/HopcroftU79	book	Introduction to Automata Theory, Languages and Computation.		1979	Addison-Wesley
+books/aw/JaJa92	book	An Introduction to Parallel Algorithms		1992	Addison-Wesley
+books/aw/Jackson86	book	Introduction to Expert Systems, 1st Edition.		1986	Addison-Wesley
+books/aw/Jackson90	book	Introduction to Expert Systems, 2nd Edition.		1990	Addison-Wesley
+books/aw/Jackson99	book	Introduction to Expert Systems, 3rd Edition.		1999	Addison-Wesley
+books/aw/KernighanP99	book	The Practice of Programming		1999	Addison-Wesley
+books/aw/KimL89	book	Object-Oriented Concepts, Databases, and Applications.		1989	ACM Press and Addison-Wesley
+books/aw/Knuth68	book	The Art of Computer Programming, Volume I: Fundamental Algorithms		1968	Addison-Wesley
+books/aw/Knuth69	book	The Art of Computer Programming, Volume II: Seminumerical Algorithms		1969	Addison-Wesley
+books/aw/Knuth73	book	The Art of Computer Programming, Volume III: Sorting and Searching		1973	Addison-Wesley
+books/aw/Knuth73a	book	The Art of Computer Programming, Volume I: Fundamental Algorithms, 2nd Edition.		1973	Addison-Wesley
+books/aw/Knuth81	book	The Art of Computer Programming, Volume II: Seminumerical Algorithms, 2nd Edition		1981	Addison-Wesley
+books/aw/Lippman96	book	Inside the C++ Object Model		1996	Addison-Wesley
+books/aw/Luenberger73	book	Introduction to Linear and Nonlinear Programming.		1973	Addison-Wesley
+books/aw/MannilaR92	book	Design of Relational Databases		1992	Addison-Wesley
+books/aw/Ousterhout94	book	Tcl and the Tk Toolkit		1994	Addison-Wesley
+books/aw/PlasmeijerE93	book	Functional Programming and Parallel Graph Rewriting		1993	Addison-Wesley
+books/aw/RabinovichS01	book	Web Caching and Replication		2001	Addison-Wesley
+books/aw/Rahm94	book	Mehrrechner-Datenbanksysteme - Grundlagen der verteilten und parallelen Datenbankverarbeitung.		1994	Addison-Wesley
+books/aw/Ross89	book	Advanced Prolog: Techniques and Examples		1989	Addison-Wesley
+books/aw/Salton89	book	Automatic Text Processing: The Transformation, Analysis, and Retrieval of Information by Computer.		1989	Addison-Wesley
+books/aw/Samet90	book	The Design and Analysis of Spatial Data Structures		1990	Addison-Wesley
+books/bc/tanselCGSS93/BaudinetCW93	incollection	Temporal Deductive Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/CliffordC93	incollection	The Historical Relational Data Model (HRDM) Revisited.	Temporal Databases	1993	
+books/bc/tanselCGSS93/CliffordCT93	incollection	On the Completeness of Query Languages for Grouped and Ungrouped Historical Data Models.	Temporal Databases	1993	
+books/bc/tanselCGSS93/ElmasriWK93	incollection	A Temporal Model and Query Language for EER Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/ElmasriWK93a	incollection	The Time Index and the Monotonic B+-tree.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Gadia93	incollection	Ben-Zvi's Pioneering Work in Relational Temporal Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/GadiaN93	incollection	Temporal Databases: A Prelude to Parametric Data.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Ginsburg93	incollection	Object and Spreadsheet Histories.	Temporal Databases	1993	
+books/bc/tanselCGSS93/JensenM93	incollection	Differential Query Processing in Transaction-Time Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Kolovson93	incollection	Indexing Techniques for Historical Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/LeungM93	incollection	Stream Processing: Temporal Query Processing and Optimization.	Temporal Databases	1993	
+books/bc/tanselCGSS93/LometS93	incollection	Transaction-Time Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Lorentzos93	incollection	The Interval-extended Relational Model and Its Applications to Valid-time Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/MontanariP93	incollection	temporal Reasoning.	Temporal Databases	1993	
+books/bc/tanselCGSS93/NavatheA93	incollection	Temporal Extensions to the Relational Model and SQL.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Sadra93	incollection	HSQL: A Historical Query Language.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Segev93	incollection	Join Processing and Optimization in Temporal Relational Databases.	Temporal Databases	1993	
+books/bc/tanselCGSS93/SegevS93	incollection	A Temporal Data Model Based on Time Sequences.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Snodgrass93	incollection	An Overview of TQuel.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Tansel93	incollection	A Generalized relational Framework for Modeling Temporal Data.	Temporal Databases	1993	
+books/bc/tanselCGSS93/Tuzhilin93	incollection	Applications of temporal Databases to Knowledge-based Simulations.	Temporal Databases	1993	
+books/bc/tanselCGSS93/WiederholdJL93	incollection	Integrating Temporal Data in a Heterogeneous Environment.	Temporal Databases	1993	
+books/bc/tanselCGSS93/WuuD93	incollection	A Uniform Model for Temporal and Versioned Object-oriented Databases.	Temporal Databases	1993	
+books/bc/AtzeniA93	book	Relational Database Theory		1993	Benjamin/Cummings
+books/bc/BatiniCN92	book	Conceptual Database Design: An Entity-Relationship Approach.		1992	Benjamin/Cummings
+books/bc/Booch90	book	Object-Oriented Design with Applications		1990	Benjamin/Cummings
+books/bc/ElmasriN89	book	Fundamentals of Database Systems		1989	Benjamin/Cummings
+books/bc/ElmasriN94	book	Fundamentals of Database Systems, 2nd Edition.		1994	Benjamin/Cummings
+books/bc/FischerL1991	book	Crafting a Compiler with C		1991	Benjamin/Cummings
+books/bc/KumarGGK94	book	Introduction to Parallel Computing.		1994	Benjamin/Cummings
+books/bc/MaierW88	book	Computing with Logic: Logic Programming with Prolog		1988	Benjamin/Cummings
+books/bc/TanselCGJSS93	book	Temporal Databases: Theory, Design, and Implementation		1993	Benjamin/Cummings
+books/bi/AlbertO1983	book	Automaten, Sprachen und Maschinen für Anwender		1983	Bibliographisches Institut
+books/bi/Everling1990	book	Rechnerorganisation		1990	Bibliographisches Institut
+books/bi/Everling1993	book	Rechnerorganisation, 2. Auflage		1993	Bibliographisches Institut
+books/bi/Fellner1988	book	Computer-Grafik		1988	Bibliographisches Institut
+books/bi/Fellner1992	book	Computer-Grafik, 2. Auflage		1992	Bibliographisches Institut
+books/bi/Hertzberg1989	book	Planen: Einführung in die Planerstellungsmethoden der künstlichen Intelligenz		1989	Bibliographisches Institut
+books/bi/Horster1985	book	Kryptologie		1985	Bibliographisches Institut
+books/bi/KandziaK1993	book	Theoretische Grundlagen relationaler Datenbanksysteme		1993	Bibliographisches Institut
+books/bi/Kauffels1987	book	Rechnernetzwerksystemarchitekturen und Datenkommunikation		1987	Bibliographisches Institut
+books/bi/KeimP1992	book	Datenbankmaschinen: Performanz durch Parallelität		1992	Bibliographisches Institut
+books/bi/Kelter1985	book	Parallele Transaktionen in Datenbanksystemen		1985	Bibliographisches Institut
+books/bi/Maier1986	book	Syntaxanalyse, 3. Auflage		1986	Bibliographisches Institut
+books/bi/Mock1990	book	C		1990	Bibliographisches Institut
+books/bi/OttmannW1990	book	Algorithmen und Datenstrukturen		1990	Bibliographisches Institut
+books/bi/OttmannW1993	book	Algorithmen und Datenstrukturen, 2. Auflage		1993	Bibliographisches Institut
+books/bi/Schefe1986	book	Künstliche Intelligenz: Überblick und Grundlagen; grundlegende Konzepte und Methoden zur Realisierung von Systemen der künstlichen Intelligenz		1986	Bibliographisches Institut
+books/bi/Schneider1993	book	Geo-Datenbanksysteme: Eine Speicher- und Zugriffsarchitektur		1993	Bibliographisches Institut
+books/bi/Schoning1987	book	Logik für Informatiker		1987	Bibliographisches Institut
+books/bi/Schoning1989	book	Logik für Informatiker, 2. Auflage		1989	Bibliographisches Institut
+books/bi/Schoning1992	book	Logik für Informatiker, 3. Auflage		1992	Bibliographisches Institut
+books/bi/Stetter1984	book	Softwaretechnologie: Eine Einführung, 3. Auflage		1984	Bibliographisches Institut
+books/bi/Stetter1987	book	Softwaretechnologie: Eine Einführung, 4. Auflage		1987	Bibliographisches Institut
+books/bi/WallerH1985	book	Mikroprozessoren: vom Bauteil zur Anwendung, 2. Auflage		1985	Bibliographisches Institut
+books/bi/Wedekind1992	book	Objektorientierte Schemaentwicklung: Ein kategorialer Ansatz für Datenbanken und Programmierung		1992	Bibliographisches Institut
+books/bi/WedekindH1974	book	Datenbanksysteme I		1974	Bibliographisches Institut
+books/bi/WedekindH1976	book	Datenbanksysteme II		1976	Bibliographisches Institut
+books/bi/WedekindH1981	book	Datenbanksysteme I, 2. Auflage		1981	Bibliographisches Institut
+books/bi/WedekindH1991	book	Datenbanksysteme I, 3. Auflage		1991	Bibliographisches Institut
+books/bi/Zima1982	book	Compilerbau I: Analyse		1982	Bibliographisches Institut
+books/bi/Zima1983	book	Compilerbau II: Synthese und Optimierung		1983	Bibliographisches Institut
+books/bi/Zima1986	book	Betriebssysteme: Parallele Prozesse, 3. Auflage		1986	Bibliographisches Institut
+books/bi/Zima1988	book	Compilerbau I: Analyse, 2. Auflage		1988	Bibliographisches Institut
+books/bu/Rijsbergen79	book	Information Retrieval.		1979	Butterworth
+books/bu/Morgan1998	book	Building an Optimizing Compiler.		1998	Butterworth
+books/collins/Frost86	book	Introduction to Knowledge Base Systems		1986	Collins
+books/crc/CRCcompiler2002/AggarwalK02	incollection	Debuggers for Programming Languages.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/AllanA02	incollection	Software Pipelining.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/ChoudharyK02	incollection	Compilation for Distributed Memory Architectures.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Duesterwald02	incollection	Dynamic Compilation.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Gopinath02	incollection	Register Allocation.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Govindarajan02	incollection	Instruction Scheduling.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/GuptaG02	incollection	Data Flow Testing.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/GuptaMZ02	incollection	Profile-Guided Compiler Optimizations.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Khedker02	incollection	Data Flow Analysis.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/KrallH02	incollection	Optimizations for Object-Oriented Languages.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/MundGM02	incollection	Program Slicing.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Paleri02	incollection	Automatic Generation of Code Optimizers from Formal Specifications.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/PrasadA02	incollection	Introduction to Operational Semantics.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/QinM02	incollection	Architecture Description Languages for Retargetable Compilation.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/RajagopalanM02	incollection	Retargetable Very Long Instuction Word Compiler Framework for Digital Signal Processors.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Rajopadhye02	incollection	Dependence Analysis and Parallelizing Transformations.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Ramanujam02	incollection	Automatic Data Distribution.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Shankar02	incollection	Instruction Selection Using Tree Parsing.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Srikant02	incollection	Scalar Compiler Optimizations on the Static Single Assignment Form and the Flow Graph.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/Subrahmanyam02	incollection	Type Systems in Programming Languages.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/VenugopalK02	incollection	Compiling Safe Mobile Code.	The Compiler Design Handbook	2002	
+books/crc/CRCcompiler2002/WilhelmRS02	incollection	Shape Analysis and Applications.	The Compiler Design Handbook	2002	
+books/crc/IIR2005/AxelssonFHNSV05	incollection	A Comparative Case Study of Distributed Network Architectures for Different Automotive Applications.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Loy05	incollection	LonWorks/EIA-709 Networks EIA 709 Protocol (Lon Talk).	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BarrettoBP05	incollection	Distributed Components in Microsoft Platforms - Technology Overview.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PedreirasAF05	incollection	The Quest for Real-Time Behavior in Ethernet.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BarrettoBP05a	incollection	CORBA in Manufacturing - Technology Overview.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PenzhornA05	incollection	IPv6, IPSec, and VPNs.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BelloP05	incollection	Overview and Classification of IP Routing Protocols - IP Routing: Interior and Exterior Routing Protocols.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PeschkeL05	incollection	Java Technology and Industrial Applications.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Bertolotti05	incollection	Internal Architecture and Features of Real-Time Embedded Operation Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Polze05	incollection	Middleware.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BertozziBM05	incollection	Network On-Chip Design for Gigascale Systems-on-Chip.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PoppFB05	incollection	Principles and Features of PROFINET.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BeuthelGT05	incollection	Knowledge Connect - An Approach for an Industrial IT Service Tool.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/LeeMH05	incollection	Intelligent Space and Mobile Robots.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BlumenthalGHH05	incollection	Software for Wireless Sensor Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Liu05	incollection	Web-based Enterprise Computing Development using J2EE.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/BrennancGKNL05	incollection	Holonic Manufacturing Systems: A Technical Overview.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PortugalC05	incollection	The GRAFCET Specification Language.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Buchwitz05	incollection	The IDA Standard.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Pospiech05	incollection	Embedded Software in the SoC World. The Concept of HdS in View of the HW and SW Design Challenge.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/CarloniBSS05	incollection	Platform-Based and Derivative Design.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/RadingerJ05	incollection	Internet Programming Languages.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Cavalieri05	incollection	FOUNDATION Fieldbus: History and Features.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/RuelaR05	incollection	MPLS - Multiprotocol Label Switching.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/CenaV05	incollection	Operating Principles and Features of CAN Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Russell05	incollection	Robot Tactile Sensing.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/CesarioWJ05	incollection	Hardware/Software Interfaces Design for SoC.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Russell05a	incollection	Giving Robots a Sense of Smell.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Chinnappen05	incollection	Mail Transfer and File Transfer Protocol.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Sanneck05	incollection	The Integrated Services Architecture and RSVP.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/ColomboSN05	incollection	Collaborative (Agent-Based) Factory Automation.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Sauter05	incollection	Linking Factory Floor and the Internet.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Decotignie05	incollection	Which Network for Which Application.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Schafer05	incollection	Internet Firewalls.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Decotignie05a	incollection	Interconnection of Wireline and Wireless Fieldbusses.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/SchollesSN05	incollection	IEEE 1394 for Factory Automation.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Dekneuvel05	incollection	Intelligent Sensors: Analysis and Design.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Schwaiger05	incollection	Securtity in Automation Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Diedrich05	incollection	Integration Technologies of Field Devices in Distributed Control and Engineering Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Schwarz05	incollection	The Standard Message Specification for Industrial Automation Systems -ISO 9506 (MMS).	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/DurresiJ05	incollection	RTP, RTCP, and RTSP - Internet Protocols for Real-Time Multimedia Communication.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Schwarz05a	incollection	Smart Power Systems Rely on Standards for Information Models and Messaging - IEC 61850.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Eckert05	incollection	The Fundamentals of Web Services.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/SeyfarthK05	incollection	Open System Architecture for Controls within Automation Systems (OSACA).	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Eckert05a	incollection	Programming Web Services with .net and java.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/SisalemW05	incollection	A Survey of Congestion and QoS Control Mechanisms for the Internet.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Edwards05	incollection	Languages for Embedded Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/SkeieJH05	incollection	Switched Ethernet in Automation Networking.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Emerson05	incollection	Enterprise-Manufacturing Data Exchange Using XML.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/SousaC05	incollection	Programming with the IEC 61131-3 Languages and the MatPLC.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Eyrich05	incollection	The Dynamic Host Configuration Protocol.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Steffen05	incollection	Security in Embedded Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Falb05	incollection	The Internet Protocol.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/StripfB05	incollection	PROFIsafe - Safety Technology with PROFIBUS.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Falb05a	incollection	ARP - Address Resolution Protocol.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Fay05	incollection	XML for the Exchange of Automation Project Information.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Thomesse05	incollection	The WORLDFIP Fieldbus.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/FestagW05	incollection	IP-Mobility for Cellular and Wireless Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Thramboulidis05	incollection	Unified Modeling Language: The Industry Standard for Software Development.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/GandhamMRS05	incollection	A Survey on Self-Organizing Wireless Sensor Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Tolksdorf05	incollection	Web Servers, Clients, and Browsers.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Goeschka05	incollection	The Hypertext Transfer Protocol and Uniform Resource Identifier.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/VasseurMP05	incollection	Introduction to Multisensor Data Fusion.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/GomesB05	incollection	Models of Computation for Embedded Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/VeryhaB05	incollection	Industrial IT-Based Network Management.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/GomesC05	incollection	Hardware-level Design Languages.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/VetterW05	incollection	Integration Between Production and Business Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/VrbaM05	incollection	From Holonic Control to Virtual Enterprises: The Multi-Agent Approach.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/HanischV05	incollection	Acheiving Reconfigurability of Automation Systems by Using the New International Standard IEC 61499: A Developer's View.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Wehrle05	incollection	IP-QoS: Scalable and Flexible Quality-of-Service with Differentiated Services.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/HanssonNN05	incollection	Real-Time Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Willig05	incollection	Wireless LAN Technology for the Factory Floor.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/HeisingB05	incollection	Internet Still Image and Video Formats.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/WillingW05	incollection	Principles of Lower-Layer Protocols for Data Communications.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Hoang05	incollection	Network Management: Basic Notions and Frameworks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Zseby05	incollection	Multicast.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/HoffC05	incollection	HTTP Digest Authentication - Theory and Practice.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/HuK05	incollection	Web Services for Integrated Automation Systems - Challenges, Solutions and Future.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/GuptaBM05	incollection	Verification Languages.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/HummelH05	incollection	Mobile IP Routing.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Jacobsen05	incollection	Remote Monitoring and Control over the Internet.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/JacomeR05	incollection	Power Aware Embedded Computing.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Jarvis05	incollection	Robot Vision.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/JatschkaT05	incollection	Bluetooth.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/JechtSW05	incollection	PROFIBUS - Open Solutions for the World of Automation.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Kampichler05	incollection	The Fundamentals of the Quality of Service.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Karl05	incollection	Ad Hoc Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KesavadasBS05	incollection	Applications of Haptics in Design and Manufacturing.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KimHK05	incollection	Implementation af a Virtual Factory Communication System using the Manufacturing Message Specification Standard.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Kleeman05	incollection	Ultrasonic Sensors in Robotics.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/LowisT05	incollection	Microsoft's .NET.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KlostermeyerK05	incollection	Multiagent-based Architecture for Plant Automation.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KocNLB05	incollection	Introduction to e-Manufacturing.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KopetzB05	incollection	Time-Triggered Communication Networks.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KorondiSH05	incollection	Internet-Based Telemanipulation.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Kruegel05	incollection	Network Security and Secure Applications.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Kunes05	incollection	Simple Network Management Protocol SNMP.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/KurzH05	incollection	TCP/IP Architecture, Protocols, and Services.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/LangeI05	incollection	OPC - Openness, Productivity, and Connectivity.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/LavagnoP05	incollection	Design of Embedded Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Lee05	incollection	A Smart Transducer Interface Standard for Sensors and Actuators.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/LoyS05	incollection	LonWorksTM over IP.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/MalinowskiW05	incollection	The Transmission Control Protocol.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PedersenJ05	incollection	Multidimensional Databases.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/MalinowskiW05a	incollection	The User Datagram protocol.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/MartiVFF05	incollection	Networked Control Systems Overview.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Martin05	incollection	System-on-Chip and Network-on-Chip Design.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Matheus05	incollection	Wireless Local Area Networks and Wireless Personal Area Networks (WLANs and WPANs).	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Meo05	incollection	Open Controller Enabled by an Advanced Real-Time Network (OCEAN).	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Naedele05	incollection	IT Security for Automation Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/Palensky05	incollection	The JEVIS Service Platform - Distributed Energy Data Acquisition and Management.	The Industrial Information Technology Handbook	2005	
+books/crc/IIR2005/PatelGSG05	incollection	An Introductory Survey of Networked Embedded Systems.	The Industrial Information Technology Handbook	2005	
+books/crc/tucker97/AndersonBLL97	incollection	Thread Management for Shared-Memory Multiprocessors.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Wolfe97	incollection	Parallelizing Compilers.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Apodaca97	incollection	Renderman®: An Interface for Image Synthesis.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Bancilhon97	incollection	Object-Oriented Databases.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Bellovin97	incollection	Network and Internet Security.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Bernat97	incollection	Concurrent/Distributed Programming Paradigm.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/BlellochM97	incollection	Parallel Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/BowenH97	incollection	Formal Models and the Specification Process.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Brooks97	incollection	User Interface Design Activities.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Bryson97	incollection	Virtual Reality.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/BurgerGS97	incollection	Memory Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Cardelli97	incollection	Type Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Caughey97	incollection	Computational Fluid Dynamics.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/CeriR97	incollection	Rules in Data-Based Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/ChandruR97	incollection	Combinatorial Optimization.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Chapin97	incollection	Distributed and Multiprocessor Scheduling.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/CinnellaC97	incollection	Computational Reacting Flow.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Cohen97	incollection	Logic Programming and Constraint Logic Programming.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/CrochemoreL97	incollection	Pattern Matching and Text Compression Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Cupper97	incollection	Process and Device Scheduling.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/DeJong97	incollection	Explanation-Based Learning.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/DeanK97	incollection	Planning and Scheduling.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Demurjian97	incollection	Traditional Software Design.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Denning97	incollection	Virtual Memory.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/DiazKP97	incollection	Algebraic Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Doeppner97	incollection	Distributed File Systems and Distributed Memory.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Stankovic97	incollection	Real-Time and Embedded Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Ware97	incollection	Output Devices and Techniques.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Ziegler97	incollection	Interactive Techniques.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Ebert97	incollection	Advanced Geometric Modeling.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Feldman97	incollection	Digital Logic.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/FerbracheM97	incollection	Malicious Software and Hacking.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Finkel97	incollection	What Is an Operating System?	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/TamassiaC97	incollection	Data Structures.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Watt97	incollection	Mainstream Rendering Techniques.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Forbus97	incollection	Qualitative Reasoning.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Forrest97	incollection	Genetic Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Franklin97	incollection	Concurrency Control and Recovery.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Gannon97	incollection	Verification and Validation.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/GhezziJM97	incollection	Software Qualities and Principles.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Goldberg97	incollection	Functional Programming Languages.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Grudin97	incollection	The Organizational Context of Development and Use.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/HirshfieldE97	incollection	The Object-Oriented Language Paradigm.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/House97	incollection	Overview of Three-Dimensional Graphics.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Dzida97	incollection	International User-Interface Standardization.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/HsuP97	incollection	Busses.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/FlynnR97	incollection	Parallel Architectures.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Wegner97	incollection	Interactive Software Technology.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Huttenlocher97	incollection	Computer Vision.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Ioannidis97	incollection	Query Optimization.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Jacob97	incollection	Input Devices and Techniques.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Jajodia97	incollection	Database Security and Privacy.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/JiangLR97	incollection	Formal Models and Computability.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/JippingB97	incollection	The Imperative Language Paradigm.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/JohnsonM97	incollection	Ethical Issues for Computer Scientists and Engineers.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/JordanB97	incollection	Neural Networks.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Kaeli97	incollection	Digital Computer Architecture.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/KanthaP97	incollection	Computational Ocean Modeling.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Kaufman97	incollection	Volume Visualization.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/KhullerR97	incollection	Graph and Network Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Kieras97	incollection	Task Analysis and the Design of Functionality.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Kingsbury97	incollection	Computational Biology.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/KopecM97	incollection	Search.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/LaPaugh97	incollection	Case Study in Algorithms: VLSI Layout.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Landwehr97	incollection	Protection (Security) Models and Policy.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Lee97	incollection	Computational Geometry.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/LewisFL97	incollection	Robotics.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Louden97	incollection	Compilers and Interpreters.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Loui97	incollection	Complexity Theory.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/LuR97	incollection	Logic-Based Deductive Reasoning.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Magnenat-ThalmannT97	incollection	Computer Animation.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/McKusick97	incollection	Secondary Storage and File Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Melton97	incollection	The SQL Language: A Case Study.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/MotwaniR97	incollection	Randomized Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Mullender97	incollection	Overview of Distributed Operating Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Myers97	incollection	Interface Software Technology.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Neumann97	incollection	Security and Privacy Issues in Computer and Communication Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Noor97	incollection	Computational Structural Mechanics.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/OzsuV97	incollection	Distributed and Parallel Database Systems.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Perlman97	incollection	Routing Protocols.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Pressman97	incollection	Development Strategies and Project Management.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/ReidS97	incollection	Internetworking.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Reiss97	incollection	Software Tools and Environments.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Rockwood97	incollection	Geometric Primitives.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Salzberg97	incollection	Access Methods.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Schach97	incollection	Testing: Principles and Practice.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/SelberJM97	incollection	Online Support Systems: Tutorials, Documentation, and Help.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Shang97	incollection	Computational Electromagnetics.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/ShermanCBB97	incollection	Scientific Visualization.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/SilberschatzKS97	incollection	Data Models.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Stallings97	incollection	Network Organization and Topologies.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/TuckerW97	incollection	Computer Science and Engineering: The Discipline and Its Impact.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Wills97	incollection	Process Synchronization and Interprocess Communications.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Nielsen97	incollection	Usability Engineering.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/NirenburgM97	incollection	Knowledge-Based Systems for Natural Language Processing.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/NoonanB97	incollection	Run Time Environments and Memory Management.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/ONeil97	incollection	Database Performance Measurement.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Pearl97	incollection	Graphical Models for Probabilistic and Causal Reasoning.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Pierce97	incollection	Foundational Calculi for Programming Languages.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Quinlan97	incollection	Decision Trees and Instance-Based Classifiers.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Reingold97	incollection	Basic Techniques for Design and Analysis of Algorithms.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/RiloffH97	incollection	Text Databases and Information Retrieval.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Rossen97	incollection	The Human Factor in Programming and Software Development.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/SandhuS97	incollection	Authentication, Access Controls, and Intrusion Detection.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Schmidt97	incollection	Programming Language Semantics.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/SeneffZ97	incollection	Understanding Spoken Language.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Shasha97	incollection	Tuning Database Design for High Performance.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/SiegelDA97	incollection	Software Support Challenges for Heterogeneous Computing.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Sommerville97	incollection	Software Process Models.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/SoniW97	incollection	Geometry-Grid Generation.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Swartzlander97	incollection	High-Speed Computer Arithmetic.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Wolberg97	incollection	Sampling, Reconstruction, and Antialiasing.	The Computer Science and Engineering Handbook	1997	
+books/crc/tucker97/Alty97	incollection	Multimedia.	The Computer Science and Engineering Handbook	1997	
+books/crc/IIR05	book	The Industrial Information Technology Handbook	The Industrial Information Technology Handbook	2005	CRC Press
+books/crc/Lemone1992	book	Design of Compilers - Techniques of Programming Language Translation		1992	CRC Press
+books/crc/MenezesOV96	book	Handbook of Applied Cryptography		1996	CRC Press
+books/crc/tucker1997	book	The Computer Science and Engineering Handbook		1997	CRC Press
+books/crc/Compiler02	book	The Compiler Design Handbook: Optimizations and Machine Code Generation	The Compiler Design Handbook	2002	CRC Press
+books/cs/HorowitzS78	book	Fundamentals of Computer Algorithms.		1978	Computer Science Press
+books/cs/Maier83	book	The Theory of Relational Databases.		1983	Computer Science Press
+books/cs/NaqviT89	book	A Logical Language for Data and Knowledge Bases.		1989	Computer Science Press
+books/cs/Papadimitriou86	book	The Theory of Database Concurrency Control		1986	Computer Science Press
+books/cs/Parsons1992	book	Introduction to Compiler Construction		1992	Computer Science Press
+books/cs/Storer88	book	Data Compression: Methods and Theory.		1988	Computer Science Press
+books/cs/Ullman80	book	Principles of Database Systems, 1st Edition		1980	Computer Science Press
+books/cs/Ullman82	book	Principles of Database Systems, 2nd Edition		1982	Computer Science Press
+books/cs/Ullman88	book	Principles of Database  and Knowledge-Base Systems, Volume I		1988	Computer Science Press
+books/cs/Ullman89	book	Principles of Database  and Knowledge-Base Systems, Volume II		1989	Computer Science Press
+books/cs/Wong83	book	Algorithmic Studies in Mass Storage Systems.		1983	Computer Science Press
+books/csli/Shieber86	book	An Introduction to Unification-Based Approaches to Grammar		1986	CSLI Publications, Stanford, CA
+books/csli/Uszkoreit87	book	Word Order and Constituent Structure in German		1987	CSLI Publications, Stanford, CA
+books/csli/Brewka97	book	Nonmonotonic Reasoning: An Overview		1997	CSLI Publications, Stanford, CA
+books/cu/mckeag80/AbrialSM80	incollection	Specification Language.	On the Construction of Programs	1980	
+books/cu/mckeag80/Bustard80	incollection	An Introduction to Pascal-Plus.	On the Construction of Programs	1980	
+books/cu/mckeag80/ClintP80	incollection	Algorithms for Parallel Computers.	On the Construction of Programs	1980	
+books/cu/mckeag80/Coleman80	incollection	Concurrent Pascal - An Appraisal.	On the Construction of Programs	1980	
+books/cu/mckeag80/Hoare80	incollection	A Model for Communicating Sequential Processes.	On the Construction of Programs	1980	
+books/cu/mckeag80/IchbiahBHKRW80	incollection	Modules and Visibility in the Ada Programming Language.	On the Construction of Programs	1980	
+books/cu/mckeag80/Jackson80	incollection	Information Systems: Modelling, Sequencing and Transformations.	On the Construction of Programs	1980	
+books/cu/mckeag80/McKeag80	incollection	A Structured Operating System.	On the Construction of Programs	1980	
+books/cu/mckeag80/Perrott80	incollection	Languages for Parallel Computers.	On the Construction of Programs	1980	
+books/cu/mckeag80/RoubineH80	incollection	Parallel Processing in Ada.	On the Construction of Programs	1980	
+books/cu/mckeag80/Welsh80	incollection	A Structured Compiler.	On the Construction of Programs	1980	
+books/cu/Appel1992	book	Compiling with Continuations		1992	Cambridge University Press
+books/cu/Appel1997	book	Modern Compiler Implementation in Java: Basic Techniques		1997	Cambridge University Press
+books/cu/Appel1997c	book	Modern Compiler Implementation in C: Basic Techniques		1997	Cambridge University Press
+books/cu/Appel1997ml	book	Modern Compiler Implementation in ML: Basic Techniques		1997	Cambridge University Press
+books/cu/Appel1998	book	Modern Compiler Implementation in Java		1998	Cambridge University Press
+books/cu/Appel1998c	book	Modern Compiler Implementation in C		1998	Cambridge University Press
+books/cu/Appel1998ml	book	Modern Compiler Implementation in ML		1998	Cambridge University Press
+books/cu/Appel2002	book	Modern Compiler Implementation in Java, 2nd edition.		2002	Cambridge University Press
+books/cu/DunnE82	book	An Introduction to Mathematical Taxonomy		1982	Cambridge University Press
+books/cu/DurbinEK98	book	Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids		1998	Cambridge University Press
+books/cu/Gusfield1997	book	Algorithms on Strings, Trees, and Sequences - Computer Science and Computational Biology		1997	Cambridge University Press
+books/cu/HindleyS86	book	Introduction to Combinators and Lambda-Calculus.		1986	Cambridge University Press
+books/cu/McKeagN80	book	On the Construction of Programs		1980	Cambridge University Press
+books/cu/MehlhornN99	book	LEDA: A Platform for Combinatorial and Geometric Computing.		1999	Cambridge University Press
+books/cu/MotwaniR95	book	Randomized Algorithms.		1995	Cambridge University Press
+books/cu/PressTVF92	book	Numerical Recipes in C, 2nd Edition.		1992	Cambridge University Press
+books/cu/RoeverE1998	book	Data Refinement: Model-oriented Proof Theories and their Comparison		1998	Cambridge University Press
+books/cu/RoeverBH2001	book	Concurrency Verification: Introduction to Compositional and Noncompositional Methods		2001	Cambridge University Press
+books/cul/Lange2005	book	Wiki - Planen, Einrichten, Verwalten		2005	C&L Computer und Literaturverlag
+books/dp/kappel2003/AustallerLLM03	incollection	Technologiebewusstes Design von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/Behrendt03	incollection	Semantisches Web - Das Netz der Bedeutungen im Netz der Dokumente.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/Buchholz03	incollection	Sicherheit von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/EbnerW03	incollection	Betrieb und Wartung von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/Eichinger03	incollection	Architektur von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/EngelsLW03	incollection	Entwicklungsprozess von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/GaedkeNJD03	incollection	Implementierungstechnologien für Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/Grunbacher03	incollection	Requirements Engineering für Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/HitzL03	incollection	Usability von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/KappelPRR03	incollection	Web Engineering - Die Disziplin zur systematischen Entwicklung von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/Kotsis03	incollection	Performanz von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/Mayr03	incollection	Web-Projektmanagement.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/SchwingerK03	incollection	Modellierung von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/kappel2003/SteindlRA03	incollection	Testen von Web-Anwendungen.	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	
+books/dp/rahm2003/BennL03	incollection	Semistrukturierte Datenmodelle und XML.	Web & Datenbanken	2003	
+books/dp/rahm2003/BohmeR03	incollection	Benchmarking von XML-Datenbanksystemen.	Web & Datenbanken	2003	
+books/dp/rahm2003/HelmerM03	incollection	Indexstrukturen für XML.	Web & Datenbanken	2003	
+books/dp/rahm2003/JaeschkeOV03	incollection	Web-basiertes Lernen: Eine Übersicht über Stand und Entwicklungen.	Web & Datenbanken	2003	
+books/dp/rahm2003/KappelRPUV03	incollection	Architektur von Web-Informationssystemen.	Web & Datenbanken	2003	
+books/dp/rahm2003/KeidlKSS03	incollection	Web Services.	Web & Datenbanken	2003	
+books/dp/rahm2003/KlettkeMRU03	incollection	Speicherung von XML-Dokumenten.	Web & Datenbanken	2003	
+books/dp/rahm2003/LausenM03	incollection	Anfragen, Ändern und Transformieren von XML.	Web & Datenbanken	2003	
+books/dp/rahm2003/MeyerK03	incollection	Kommerzielle Systeme zur Speicherung, Verwaltung und Anfrage von XML-Dokumenten.	Web & Datenbanken	2003	
+books/dp/rahm2003/RahmS03	incollection	Data-Warehouse-Einsatz zur Web-Zugriffsanalyse.	Web & Datenbanken	2003	
+books/dp/rahm2003/SattlerCS03	incollection	Datenintegration und Mediatoren.	Web & Datenbanken	2003	
+books/dp/rahm2003/SchoningW03	incollection	XML Schema.	Web & Datenbanken	2003	
+books/dp/rahm2003/WeberBH03	incollection	Suchmaschinen.	Web & Datenbanken	2003	
+books/dp/rahm2003/Weikum03	incollection	Web Caching.	Web & Datenbanken	2003	
+books/dp/DemeyerDN02	book	Object-Oriented Reengineering Patterns		2002	dpunktMorgan Kaufmann
+books/dp/Dittrich96	book	Objektorientierte Datenbanksysteme. Ein Praktikum.		1996	dpunkt
+books/dp/EndresF00	book	Digitale Bibliotheken - Informatik-Lösungen für globale Wissensmärkte		2000	dpunkt
+books/dp/Geppert02	book	Objektrelationale und objektorientierte Datenbankkonzepts und -systeme		2002	dpunkt
+books/dp/Hopfner2005	book	Mobile Datenbanken und Informationssysteme: Konzepte und Techniken		2005	dpunkt
+books/dp/KappelPRR03	book	Web Engineering: Systematische Entwicklung von Web-Anwendungen	Web Engineering: Systematische Entwicklung von Web-Anwendungen	2003	dpunkt
+books/dp/Klein01	book	Linux Sicherheit: Security mit Open-Source-Software, Grundlagen und Praxis		2001	dpunkt
+books/dp/LeserN2006	book	Informationsintegration: Architekturen und Methoden zur Integration verteilter und heterogener Datenquellen.		2006	dpunkt
+books/dp/NehmerS98	book	Systemsoftware: Grundlagen moderner Betriebssysteme		1998	dpunkt
+books/dp/RahmV03	book	Web & Datenbanken. Konzepte, Architekturen, Anwendungen		2003	dpunkt
+books/dp/SaakeS00	book	Datenbanken & Java - JDBC, SQLJ und ODMG		2000	dpunkt
+books/dp/Tolksdorf02	book	HTML & XHTML - die Sprachen des Web, Lehrgang und Referenz, 5. Auflage		2002	dpunkt
+books/dp/Turker03	book	SQL:1999 & SQL:2003 - Objektrelationales SQL, SQLJ & SQL/XML		2003	dpunkt
+books/duv/OemigCH1991	book	Wissensbasierte Textverarbeitung: Schriftsatz und Typographie - Möglichkeiten einer intelligenteren Textverarbeitung		1991	Deutscher Universitätsverlag
+books/duv/Schoning93	book	Anfrageverarbeitung in Komplexobjekt-Datenbanksystemen		1993	Deutscher Universitätsverlag
+books/eh/campbell84/BelliaDDLM84	incollection	A Formal Model for Lazy Implementations of a Prolog-Compatible Functional Language.	Implementations of Prolog	1984	
+books/eh/campbell84/Bruynooghe84	incollection	Garbage Collection in Prolog Interpreters.	Implementations of Prolog	1984	
+books/eh/campbell84/BruynoogheP84	incollection	Deduction Revision by Intelligent Backtracking.	Implementations of Prolog	1984	
+books/eh/campbell84/CampbellH84	incollection	Should Prolog be List or Record Oriented.	Implementations of Prolog	1984	
+books/eh/campbell84/Cox84	incollection	Finding Backtrack Points for Intelligent Backtracking.	Implementations of Prolog	1984	
+books/eh/campbell84/Davies84	incollection	POLER - Implementation of a POP-2-based PLANNER.	Implementations of Prolog	1984	
+books/eh/campbell84/Dowson84	incollection	A Note on Micro-Planer.	Implementations of Prolog	1984	
+books/eh/campbell84/Emden84	incollection	An Interpreting Algorithm for Prolog Programs.	Implementations of Prolog	1984	
+books/eh/campbell84/EnnalsBB84	incollection	What the naive user wants from Prolog.	Implementations of Prolog	1984	
+books/eh/campbell84/Filgueiras84	incollection	A Prolog Interpreter Working with Infinite Terms.	Implementations of Prolog	1984	
+books/eh/campbell84/Fogelholm84	incollection	Exeter Prolog - some thoughts on Prolog design by a LISP user.	Implementations of Prolog	1984	
+books/eh/campbell84/Griswold84	incollection	The Control of Searching and Backtracking in String Pattern Matching.	Implementations of Prolog	1984	
+books/eh/campbell84/HaridiS84	incollection	Efficient Implementation of Unification of Cyclic Structures.	Implementations of Prolog	1984	
+books/eh/campbell84/KahnC84	incollection	How to Implement Prolog on a LISP Machine.	Implementations of Prolog	1984	
+books/eh/campbell84/Kluzniak84	incollection	The 'Marseille Interpreter' - a Personal Perspective.	Implementations of Prolog	1984	
+books/eh/campbell84/KluzniakS84	incollection	Prolog - a Panacea?	Implementations of Prolog	1984	
+books/eh/campbell84/MellishH84	incollection	Integrating Prolog in the POPLOG Environment.	Implementations of Prolog	1984	
+books/eh/campbell84/Monteiro84	incollection	A Proposal for Distributed Programming in Logic.	Implementations of Prolog	1984	
+books/eh/campbell84/Nakamura84	incollection	Associative Evaluation of Prolog Programs.	Implementations of Prolog	1984	
+books/eh/campbell84/Nilsson84	incollection	The World's Shortest Prolog Interpreter?	Implementations of Prolog	1984	
+books/eh/campbell84/Nilsson84a	incollection	Formal Vienna-Definition-Method Models of Prolog.	Implementations of Prolog	1984	
+books/eh/campbell84/Pereira84	incollection	Logic Control with Logic.	Implementations of Prolog	1984	
+books/eh/campbell84/Porto84	incollection	Epilog: A Language for Extended Programming in Logic.	Implementations of Prolog	1984	
+books/eh/campbell84/Turner84	incollection	W-Grammars for Logic Programming.	Implementations of Prolog	1984	
+books/eh/campbell84/Warner84	incollection	The Taming of the Sleuth.	Implementations of Prolog	1984	
+books/eh/campbell84/Wise84	incollection	EPILOG: Re-interpreting and Extending Prolog for a Multiprocessor Environment.	Implementations of Prolog	1984	
+books/eh/campbell84/FutoS84	incollection	System Simulation and Cooperative Problem-solving on a Prolog Basis.	Implementations of Prolog	1984	
+books/eh/grayL88/BoccaP88	incollection	On Prolog DBMS Connections: A Step Forward from Educe.	Prolog and Databases	1988	
+books/eh/grayL88/Freeston88	incollection	Grid Files for Efficient Prolog Clause Access.	Prolog and Databases	1988	
+books/eh/grayL88/HowellsFG88	incollection	A Source-to-Source Meta-Translation System for Database Query Languages - Implementation in Prolog.	Prolog and Databases	1988	
+books/eh/grayL88/ImlahD88	incollection	A Flexible Prolog-Based Lexical Database System.	Prolog and Databases	1988	
+books/eh/grayL88/Irving88	incollection	A Generalized Interface Between Prolog and Relational Databases.	Prolog and Databases	1988	
+books/eh/grayL88/LucasV88	incollection	A Prolog-Relational Database Interface.	Prolog and Databases	1988	
+books/eh/grayL88/LunnA88	incollection	TREQL (Thornton Research Easy Query Language): An Intelligent Front-End to a Relational Database.	Prolog and Databases	1988	
+books/eh/grayL88/Moffat88	incollection	Modular Commitment in Persistent Prolog.	Prolog and Databases	1988	
+books/eh/grayL88/MoutaWN88	incollection	Implementing Query Languages in Prolog.	Prolog and Databases	1988	
+books/eh/grayL88/NomuraL88	incollection	On Transaction Processing, Knowledge-Based Systems and Databases.	Prolog and Databases	1988	
+books/eh/grayL88/PatonG88	incollection	An Object-Oriented Database for Storage and Analysis of Protein Structure Data.	Prolog and Databases	1988	
+books/eh/grayL88/RamamohanaraoSBPNTZD88	incollection	The NU-Prolog Deductive Database System.	Prolog and Databases	1988	
+books/eh/grayL88/SingletonF88	incollection	Software Configuration Management Using Prolog.	Prolog and Databases	1988	
+books/eh/grayL88/Small88	incollection	Guarded Default Databases: A Prototype Implementation.	Prolog and Databases	1988	
+books/eh/grayL88/Todd88	incollection	An Interface from Prolog to a Binary Relational Database.	Prolog and Databases	1988	
+books/eh/grayL88/VenkenD88	incollection	A Data-Driven Execution Mechanism for Transaction-Oriented Information Systems.	Prolog and Databases	1988	
+books/eh/grayL88/VenkenM88	incollection	The Interaction Between BIM-Prolog and Relational Databases.	Prolog and Databases	1988	
+books/eh/grayL88/Vieille88	incollection	Recursive Query Processing: Fundamental Algorithms and the DedGin System.	Prolog and Databases	1988	
+books/eh/grayL88/Williams88	incollection	The TRACE Club Expert System and Databases.	Prolog and Databases	1988	
+books/eh/grayL88/WilliamsMC88	incollection	Benchmarking Prolog for Database Applications.	Prolog and Databases	1988	
+books/eh/AbramskyH87	book	Abstract Interpretation of Declarative Languages		1987	Ellis Horwood
+books/eh/Michalewicz92	book	Statistical and Scientific Databases		1992	Ellis Horwood
+books/eh/MichieST94	book	Machine Learning, Neural and Statistical Classification		1994	Ellis Horwood
+books/eh/PembertonD1982	book	Pascal Implementation: The P4 Compiler and Interpreter		1982	Ellis Horwood
+books/el/RV01/Andrews01	incollection	Classical Type Theory.	Handbook of Automated Reasoning	2001	
+books/el/RV01/BaaderS01	incollection	Unification Theory.	Handbook of Automated Reasoning	2001	
+books/el/RV01/BaazEL01	incollection	Normal Form Transformations.	Handbook of Automated Reasoning	2001	
+books/el/RV01/BaazFS01	incollection	Automated Deduction for Many-Valued Logics.	Handbook of Automated Reasoning	2001	
+books/el/RV01/BachmairG01	incollection	Resolution Theorem Proving.	Handbook of Automated Reasoning	2001	
+books/el/RV01/BarendregtG01	incollection	Proof-Assistants Using Dependent Type Systems.	Handbook of Automated Reasoning	2001	
+books/el/RV01/BockmayrW01	incollection	Solving Numerical Constraints.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Bundy01	incollection	The Automation of Proof by Mathematical Induction.	Handbook of Automated Reasoning	2001	
+books/el/RV01/CalvaneseGLN01	incollection	Reasoning in Expressive Description Logics.	Handbook of Automated Reasoning	2001	
+books/el/RV01/ChouG01	incollection	Automated Reasoning in Geometry.	Handbook of Automated Reasoning	2001	
+books/el/RV01/ClarkeS01	incollection	Model Checking.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Comon01	incollection	Inductionless Induction.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Davis01	incollection	The Early History of Automated Deduction.	Handbook of Automated Reasoning	2001	
+books/el/RV01/DegtyarevV01	incollection	The Inverse Method.	Handbook of Automated Reasoning	2001	
+books/el/RV01/DegtyarevV01a	incollection	Equality Reasoning in Sequent-Based Calculi.	Handbook of Automated Reasoning	2001	
+books/el/RV01/DershowitzP01	incollection	Rewriting.	Handbook of Automated Reasoning	2001	
+books/el/RV01/DixFN01	incollection	Nonmonotonic Reasoning: Towards Efficient Calculi and Implementations.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Dowek01	incollection	Higher-Order Unification and Matching.	Handbook of Automated Reasoning	2001	
+books/el/RV01/FermullerLHT01	incollection	Resolution Decision Procedures.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Hahnle01	incollection	Tableaux and Related Methods.	Handbook of Automated Reasoning	2001	
+books/el/RV01/LetzS01	incollection	Model Elimination and Connection Tableau Procedures.	Handbook of Automated Reasoning	2001	
+books/el/RV01/NieuwenhuisR01	incollection	Paramodulation-Based Theorem Proving.	Handbook of Automated Reasoning	2001	
+books/el/RV01/NonnengartW01	incollection	Computing Small Clause Normal Forms.	Handbook of Automated Reasoning	2001	
+books/el/RV01/OhlbachNRG01	incollection	Encoding Two-Valued Nonclassical Logics in Classical Logic.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Pfenning01	incollection	Logical Frameworks.	Handbook of Automated Reasoning	2001	
+books/el/RV01/RamakrishnanSV01	incollection	Term Indexing.	Handbook of Automated Reasoning	2001	
+books/el/RV01/RobinsonV01	incollection	Preface.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Waaler01	incollection	Connections in Nonclassical Logics.	Handbook of Automated Reasoning	2001	
+books/el/RV01/Weidenbach01	incollection	Combining Superposition, Sorts and Splitting.	Handbook of Automated Reasoning	2001	
+books/el/alba85/AlbanoAL85	incollection	Computer-Aided Database Design: the DATAID approach.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/AlbanoO85	incollection	A Software Engineering Approach to Database Design: The Galileo Project.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/AntonellisZ85	incollection	A Tool for Modeling Dynamics in Conceptual Design.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/BatiniNTT85	incollection	GINCOD: A Graphical Tool for Conceptual Design of Data Base Applications.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/BertCDLGIM85	incollection	The Logical Design in the DATAID Project: The EASYMAP System.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/CapaccioliO85	incollection	A Workbench for Conceptual Design in Galileo.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/CeriP85	incollection	DATAID-D: Methodology for Distributed Database Design.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/DemoLG85	incollection	Dynamics in Logical Database Design.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/MaioSS85	incollection	Architecture of a Physical Design Tool for Relational DBMSs.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/Navathe85	incollection	Important Issues in Database Design Methodologies and Tools.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/alba85/OrlandoRSS85	incollection	Integrated Tools for Physical Database Design in CODASYL Environment.	Computer-Aided Database Design: the DATAID approach	1985	
+books/el/beierleP95/Beierle95	incollection	Concepts, Implementation, and Applications of a Typed Logic Programming Language.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/BeringerB95	incollection	Combinatorial Problem Solving in Constraint Logic Programming with Cooperating Solvers.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/BorgerR95	incollection	The WAM - Definition and Compiler Correctness.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/BreitingerL95	incollection	Using Constraint Logic Programming for Industrial Scheduling Problems.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/BrzoskaS95	incollection	Temporal Logic Programming Applied to Image Sequence Evaluation.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/Burgard95	incollection	Goal-Directed Forward Chaining: Tuple-oriented Bottom-up Approach.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/CremersLR95	incollection	Logic Program Modules for Interoperable Information Systems.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/DentiNOZ95	incollection	Robot Control Systems as Contextual Logic Programs.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/Gallaire95	incollection	Logic Programming - Past or Future?	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/Meyer95	incollection	Polymorphic Feature Types.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/Plumer95	incollection	Automatic Verification of Parallel Logic Programs: Termination.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/Sauer95	incollection	Scheduling and Meta-Scheduling.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/SchachteS95	incollection	Efficient Object-Oriented Programming in Prolog.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/beierleP95/SterlingS95	incollection	A Generic Scheduling Framework developed in Prolog.	Logic Programming: Formal Methods and Practical Applications	1995	
+books/el/ceri83/AlbanoO83	incollection	Dialogo: An Interactive Environment for Conceptual Design in Galileo.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/AntonellisD83	incollection	Requirements Collection and Analysis.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/AtzeniBCALVZ83	incollection	INCOD-DTE: A System for Interative Conceptual Design of Data, Transactions and Events.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/BatiniLM83	incollection	Views Integration.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/BertainaLG83	incollection	Logical Design in Codasyl and Relational Environment.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/BonfattiMT83	incollection	A Separability-Based Method for Secondary Index Selection in Physical Database Design.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/BracchiCP83	incollection	A Set of Integrated Tools for the Conceptual Design of Database Schemas and Transactions.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/BussolatiCAZ83	incollection	Views Conceptual Design.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/Ceri83	incollection	Methodology and Tools for Data Base Design in the DATAID Project.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/ColombettiGS83	incollection	NLDA: A Natural Language Reasoning System for the Analysis of Data Base Requirements.	Methodology and Tools for Data Base Design	1983	
+books/el/ceri83/StaniszkisSMM83	incollection	Physical Data Base Design for Codasyl DBMS.	Methodology and Tools for Data Base Design	1983	
+books/el/leeuwen90/Aho90	incollection	Algorithms for Finding Patterns in Strings.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Apt90	incollection	Logic Programming.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Barendregt90	incollection	Functional Programming and Lambda Calculus.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/BerstelB90	incollection	Context-Free Languages.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Boas90	incollection	Machine Models and Simulation.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/BoppanaS90	incollection	The Complexity of Finite Functions.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Courcelle90	incollection	Graph Rewriting: An Algebraic and Logic Approach.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Courcelle90a	incollection	Recursive Applicative Program Schemes.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Cousot90	incollection	Methods and Logics for Proving Programs.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/DershowitzJ90	incollection	Rewrite Systems.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Emerson90	incollection	Temporal and Modal Logic.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/GunterS90	incollection	Semantic Domains.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Johnson90	incollection	A Catalog of Complexity Classes.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Kanellakis90	incollection	Elements of Relational Database Theory.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/KarpR90	incollection	Parallel Algorithms for Shared-Memory Machines.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/KozenT90	incollection	Logics of Programs.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/LamportL90	incollection	Distributed Computing: Models and Methods.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Leeuwen90	incollection	Graph Algorithms.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Lengauer90	incollection	VLSI Theory.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/LenstraL90	incollection	Algorithms in Number Theory.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/LiV90	incollection	Kolmogorov Complexity and its Applications.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/MehlhornT90	incollection	Data Structures.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Milner90	incollection	Operational and Algebraic Semantics of Concurrent Processes.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Mitchell90	incollection	Type Systems for Programming Languages.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Mosses90	incollection	Denotational Semantics.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Perrin90	incollection	Finite Automata.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Pippenger90	incollection	Communication Networks.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Rivest90	incollection	Cryptography.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Salomaa90	incollection	Formal Language and Power Series.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/SchwartzS90	incollection	Algorithmic Motion Planning in Robotics.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Seiferas90	incollection	Machine-Independent Complexity Theory.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Strassen90	incollection	Algebraic Complexity Theory.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Thomas90	incollection	Automata on Infinite Objects.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Valiant90	incollection	General Purpose Parallel Architectures.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/VitterF90	incollection	Average-Case Analysis of Algorithms and Data Structures.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/leeuwen90/Wirsing90	incollection	Algebraic Specification.	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics (B)	1990	
+books/el/leeuwen90/Yao90	incollection	Computational Geometry.	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity (A)	1990	
+books/el/treeauto1992/AigrainN92	incollection	Suffix, prefix and maximal tree codes.	Tree Automata and Languages	1992	
+books/el/treeauto1992/ArnoldN92	incollection	Fixed point characterization of weak monadic logic definable sets of trees.	Tree Automata and Languages	1992	
+books/el/treeauto1992/BonizzoniMPS92	incollection	Recognizing sets of labelled acyclic graphs.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Courcelle92	incollection	Recognizable sets of unrooted trees.	Tree Automata and Languages	1992	
+books/el/treeauto1992/DauchetT92	incollection	Structural complexity of classes of tree languages.	Tree Automata and Languages	1992	
+books/el/treeauto1992/FulopV92	incollection	Decidability of the inclusion in monoids generated by tree transformation classes.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Gallier92	incollection	Unification procedures in automated deduction methods based on matings: A survey.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Grosse-RhodeD92	incollection	Algebraic specification of action trees and recursive processes.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Guessarian92	incollection	Trees and algebraic semantics.	Tree Automata and Languages	1992	
+books/el/treeauto1992/JoshiS92	incollection	Tree-adjoining grammars and lexicalized grammars.	Tree Automata and Languages	1992	
+books/el/treeauto1992/LitovskyM92	incollection	Computing trees with graph rewriting systems with priorities.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Nivat92	incollection	Binary tree codes.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Podelski92	incollection	A monoid approach to tree automata.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Raoult92	incollection	A survey of tree transductions.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Saoudi92	incollection	Rational and recognizable infinite tree sets.	Tree Automata and Languages	1992	
+books/el/treeauto1992/SaoudiB92	incollection	Automata on infinite trees and rational control.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Seese92	incollection	Interpretability and tree automata: A simple way to solve algorithmic problems on graphs closely related to trees.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Seidl92	incollection	Ambiguity and valuedness.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Simon92	incollection	A short proof of the factorization forest theorem.	Tree Automata and Languages	1992	
+books/el/treeauto1992/Steinby92	incollection	A theory of tree language varieties.	Tree Automata and Languages	1992	
+books/el/Alba85	book	Computer-Aided Database Design: the DATAID approach.		1985	North-Holland
+books/el/Borger1989	book	Computability, Complexity, Logic (English translation of "Berechenbarkeit, Komplexität, Logik" from 1985)		1989	North-Holland
+books/el/Ceri83	book	Methodology and Tools for Data Base Design.		1983	North-Holland
+books/el/Kent1978	book	Data and Reality, 1st edition.		1978	North-Holland
+books/el/Leeuwen90	book	Handbook of Theoretical Computer Science, Volume A: Algorithms and Complexity		1990	Elsevier and MIT Press
+books/el/Leeuwen90a	book	Handbook of Theoretical Computer Science, Volume B: Formal Models and Sematics		1990	Elsevier and MIT Press
+books/el/Nivat92	book	Tree Automata and Languages.		1992	North-Holland
+books/el/RobinsonV01	book	Handbook of Automated Reasoning (in 2 volumes)		2001	Elsevier and MIT Press
+books/el/YoungC74	book	Classification, Estimation and Pattern Recognition.		1974	Elsevier
+books/ph/Meyer78	book	Méthodes de Programmation, 1st edition		1978	Eyrolles
+books/ph/Meyer84	book	Méthodes de Programmation, 3rd edition		1984	Eyrolles
+books/fischer/Stoll02	book	LogOut - Warum Computer nichts im Klassenzimmer zu suchen haben und andere High-Tech-Ketzereien		2002	Fischer Taschenbuch Verlag
+books/fm/Mandelbrot77	book	Fractal Geometry of Nature.		1977	W. H. Freeman
+books/fm/Schroeder91	book	Fractals, Chaos, Power Laws: Minutes From an Infinite Paradise.		1991	W. H. Freeman
+books/fm/GareyJ79	book	Computers and Intractability: A Guide to the Theory of NP-Completeness.		1979	W. H. Freeman
+books/ft/FotheringhamR94	book	Spatial Analysis and GIS.		1994	Taylor & Francis
+books/garland/Brosgol73	book	Deterministic Translation Grammars		1973	Garland Publishing, New York
+books/garland/Brown77	book	The Analysis of a Practical and Nearly Optimal Priorty Queue		1977	Garland Publishing, New York
+books/garland/Buzen71	book	Queueing Network Models of Multiprogramming		1971	Garland Publishing, New York
+books/garland/Cartwright76	book	A Practical Formal Semantic Definition and Verification System for TYPED LISP		1976	Garland Publishing, New York
+books/garland/Crane72	book	Linear Lists and Prorty Queues as Balanced Binary Trees		1972	Garland Publishing, New York
+books/garland/Gouraud71	book	Computer Display of Curved Surfaces		1971	Garland Publishing, New York
+books/garland/Green69	book	The Application of Theorem Proving to Question-Answering Systems		1969	Garland Publishing, New York
+books/garland/Hack75	book	Decidability Questions for Petri Nets		1975	Garland Publishing, New York
+books/garland/Jain78	book	Control-Theoretic Formulation of Operating Systems Resource Management Policies		1978	Garland Publishing, New York
+books/garland/Meehan76	book	The Metanovel: Writing Stories by Computer		1976	Garland Publishing, New York
+books/garland/Minter76	book	A Processor Design for the Efficient Implementation of APL		1976	Garland Publishing, New York
+books/garland/Mitchell70	book	The Design and Construction of Flexible and Efficient Interactive Programming Systems		1970	Garland Publishing, New York
+books/garland/Moore75	book	Reasoning from Incomplete Knowledge in a Procedural Deduction System		1975	Garland Publishing, New York
+books/garland/Owicki75	book	Axiomatic Proof Techniques for Parallel Programs		1975	Garland Publishing, New York
+books/garland/Pratt72	book	Shellsort and Sorting Networks		1972	Garland Publishing, New York
+books/garland/Roberts63	book	Machine Perception of Three-Dimensional Solids		1963	Garland Publishing, New York
+books/garland/Satterthwaite75	book	Source Language Debugging Tools		1975	Garland Publishing, New York
+books/garland/Sedgewick75	book	Quicksort		1975	Garland Publishing, New York
+books/garland/Shum76	book	Queueing Models for Computer Systems with General Service Time Distributions		1976	Garland Publishing, New York
+books/garland/Standish67	book	A Data Definition Facility for Programming Languages		1967	Garland Publishing, New York
+books/garland/Sutherland63	book	Sketchpad, A Man-Machine Graphical Communication System		1963	Garland Publishing, New York
+books/garland/Suzuki76	book	Automatic Verification of Programs with Complex Data Structures		1976	Garland Publishing, New York
+books/garland/Wegbreit70	book	Studies in Extensible Programming Languages		1970	Garland Publishing, New York
+books/garland/Wick75	book	Automatic Generation of Assemblers		1975	Garland Publishing, New York
+books/garland/Wilensky78	book	Understanding Goal-Based Stories		1978	Garland Publishing, New York
+books/garland/Willard78	book	Predicate-Oriented Database Search Algorithms		1978	Garland Publishing, New York
+books/garland/Woods67	book	Semantics For a Question-Answering System		1967	Garland Publishing, New York
+books/garland/Yun73	book	The Hensel Lemma in Algebraic Manipulation		1973	Garland Publishing, New York
+books/halsted/Everitt93	book	Cluster Analysis.		1993	Edward Arnold and Halsted Press
+books/hanser/Meyer90	book	Objektorientierte Softwareentwicklung		1990	Carl Hanser VerlagPrentice Hall
+books/hanser/Meyer95	book	Erfolgsschlüssel Objekttechnologie -- Managerführer zur Neuorganisation des Softwareprozesses		1995	Carl Hanser Verlag
+books/harper/Gallier86	book	Logic for Computer Science: Foundations of Automatic Theorem Proving		1986	Harper & Row
+books/harper/WaiteC1993	book	An Introduction to Compiler Contruction		1993	HarperCollins
+books/harwood/miranda2000/Camurri00	incollection	Artificial Intelligence Architectures for Composition and Performance Environment.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Dannenberg00	incollection	Dynamic Programming for Interactive Music Systems.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Guerra00	incollection	The Mechanization of Intelligence and the Human Aspects of Music.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Holland00	incollection	Artificial Intelligence in Music Education: A Critical Review.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Marsden00	incollection	Music, Intelligence and Artificiality.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Miranda00	incollection	Regarding Music, Machines, Intelligence and the Brain: An Introduction to Music and AI.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Pachet00	incollection	Computer Analysis of Jazz Chord Sequence: Is Solar a Blues?	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/RolandG00	incollection	Musical Pattern Extraction and Similarity Assessment.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Rowe00	incollection	Interactive Music Systems in Ensemble Performance.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Toiviainen00	incollection	Symbolic AI versus Connectionism in Music Research.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Widmer00	incollection	On the Potential of Machine Learning for Music Research.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/WigginsS00	incollection	Musical Knowledge: What can Artificial Intelligence Bring to the Musician?	Readings in Music and Artificial Intelligence	2000	
+books/harwood/miranda2000/Smith00	incollection	Artificial Intelligence and Music Education.	Readings in Music and Artificial Intelligence	2000	
+books/harwood/Miranda00	book	Readings in Music and Artificial Intelligence	Readings in Music and Artificial Intelligence	2000	Harwood Academic publishers
+books/idea/becker2003/AbramowiczP03	incollection	Information Extraction from Free-Text Business Documents.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/AleE03	incollection	Active Rules and Active Databases: Concepts and Application.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/AlvarezA03	incollection	Applying JAVA-Triggers for X-Link Management in the Industrial Framework.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/ChbeirAF03	incollection	Novel Indexing Method of Relations Between Salient Objects.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/Chen03	incollection	On the Computation of Recursion in Relational Databases.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/ChenH03	incollection	Building Signature-Trees on Path Signatures in Document Databases.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/FernandezFG03	incollection	Dealing with Relationship Cardinality Constraints in Relational Database Design.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/GrecoGZ03	incollection	Repairing and Querying Inconsistent Databases.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/LyytikainenTS03	incollection	Unifying Access to Heterogeneous Document Databases Through Contextual Metadata.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/Millet03	incollection	Managing Document Taxonomies in Relational Databases.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/MontesLVG03	incollection	Database Management Issues in the Web Environment.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/SchielS03	incollection	Interactive Indexing of Documents with a Multilingual Thesaurus.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/Schultz03	incollection	Understanding Functional Dependency.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/SilvaCVLR03	incollection	Keyword-Based Queries Over Web Databases.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/Smadhi03	incollection	System of Information Retrieval in XML Documents.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/TaniarRS03	incollection	A Taxonomy for Object-Relational Queries.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/TsalgatidouN03	incollection	Re-Engineering and Automation of Business Processes: Criteria for Selecting Supporting Tools.	Effective Databases for Text & Document Management	2003	
+books/idea/becker2003/SerranoCP03	incollection	Metrics for Data Warehouse Quality.	Effective Databases for Text & Document Management	2003	
+books/idea/doornR02/AleE02	incollection	Integrity Constraints in an Active Database Environment.	Database Integrity	2002	
+books/idea/doornR02/BorgesDL02	incollection	Integrity Constraints in Spatial Databases.	Database Integrity	2002	
+books/idea/doornR02/CuandraNMCV02	incollection	Preserving Relationship Cardinality Constraints in Relational Schemata.	Database Integrity	2002	
+books/idea/doornR02/Decker02	incollection	Translating Advanced Integrity Checking Technology to SQL.	Database Integrity	2002	
+books/idea/doornR02/DoornRF02	incollection	Introduction.	Database Integrity	2002	
+books/idea/doornR02/GrecoZ02	incollection	Consistent Queries Over Databases with Integrity Constraints.	Database Integrity	2002	
+books/idea/doornR02/MontesVL02	incollection	Integrity Issues in the Web: Beyond Distributed Databases.	Database Integrity	2002	
+books/idea/doornR02/RashK02	incollection	Functional Dependencies for Value Based Identification in Object-Oriented Databases.	Database Integrity	2002	
+books/idea/doornR02/RiveroDF02	incollection	Database Integrity: Fundamental and Current Implementations.	Database Integrity	2002	
+books/idea/doornR02/Schiel02	incollection	Integrity Maintenance in Extensible Databases.	Database Integrity	2002	
+books/idea/encyclopedia2005/Brandon05c	incollection	Project Management in Graduate Education.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Abou-Zeid05	incollection	Alignment of Business and Knowledge Management Strategy.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Brewer05	incollection	Project Management Best Practices to Increase Success.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Abou-Zeid05a	incollection	Autopoietic Approach for Information System Development.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/BrydeP05	incollection	Sponsorship in IT Project Management.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Abu-Samaha05	incollection	A Systematic Approach for Information Systems Evaluation.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Buehrer05	incollection	Organizing Multimedia Objects by Using Class Algebra.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Achterbergh05	incollection	ICT-Supported Gaming for Competitive Intelligence.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/KimbleH05	incollection	Virtual Communities in Practice.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Kim05	incollection	Concepts and Dynamics of the Application Service Provider Industry.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Achterbergh05a	incollection	IT Supporting Strategy Formulation.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/CarvalhoBL05	incollection	Credit Card Users' Data Mining.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/AdamP05	incollection	Better Executive Information with the Dashboard Approach.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/CarvalhoLP05	incollection	Project Management Models in IT.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/AifantiSGM05	incollection	Human Motion Tracking and Recognition.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Casado05	incollection	Expanding Data Mining Power with System Dynamics.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Aigbedo05	incollection	Enhancing Competitiveness of B2B and B2C E-Commerce.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Castro05	incollection	Natural Computing.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/AjiferukeO05	incollection	Information Technology Usage in Nigeria.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Cavanaugh05	incollection	Distance Education Success Factors.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Al-GharbiK05	incollection	Impacts of the Intranet on PDO.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Cavanaugh05a	incollection	Online Learning as a Form of Accomodation.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Al-Qirim05	incollection	SMEs Amidst Global Technological Changes.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Cevenini05	incollection	Legal Issues of Virtual Organizations.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Al-Qirim05a	incollection	Telemedicine in Healthcare Organisations.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChakrabortyCS05	incollection	Multicast Routing Protocols, Algorithms and its QoS Extensions.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/AleE05	incollection	Triggers, Rules and Constraints in Databases.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Chan05	incollection	Data Mining for Combining Forecasts in Inventory Management.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/AliAHS05	incollection	Spatial Modeling of Risk Factors for Gender-Specific Child Mortality.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChanC05	incollection	Content-Based Retrieval Concept.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/AliW05	incollection	Knowledge Management and Social Learning.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/ChanF05	incollection	Interface Design Issues for Mobile Commerce.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/AlippiV05	incollection	Perturbations, Accuracy and Robustness in Neural Networks.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/ChanHWC05	incollection	A Duplicate Chinese Document Image Retrieval System.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Alkhalifa05	incollection	Multimedia Evaluations Based on Cognitive Science Findings.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/ChanTT05	incollection	One-to-One Video-Conferencing Education.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Amant05	incollection	International Digital Studies Approach for Examining International Online Interactions.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Chang05	incollection	Structure- and Content-Based Retrieval for XML Documents.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Amaravadi05	incollection	Strategic Utilization of Data Mining.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChatziantoniouD05	incollection	Incorporating Data Stream Analysis into Decision Support Systems.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/AntoniouCP05	incollection	Semantic Web Fundamentals.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChbeirY05	incollection	Novel Indexing Method of Relations Between Salient Objects.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Anttiroiko05	incollection	Democratic E-Governance.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Chen05	incollection	Graph Encoding and Recursion Computation.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Anttiroiko05a	incollection	Strategic Knowledge Management in Public Organizations.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChenHS05	incollection	Organization and Management Issues of End User Computing.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Archer05	incollection	Management Considerations for B2B Online Exchanges.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/ChenL05	incollection	Behavioral Perspective of Groupware Adoption.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Artz05	incollection	Addressing the Central Problem in Cyber Ethics through Stories.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/ChenL05a	incollection	Data Mining in Practice.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Artz05a	incollection	Web Technologies And Data Warehousing Strategies.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChenTH05	incollection	Similarity Web Pages Retrieval Technologies on the Internet.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Arya05	incollection	Content Description for Face Animation.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/ChenZJ05	incollection	Data Mining in Franchise Organizations.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/AskarH05	incollection	Diffusion of E-Learning as an Educational Innovation.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/ChenZJ05a	incollection	Franchising and Information Technology.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Askarany05	incollection	Diffusion of Innovations in Organisations.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Cheo05	incollection	Neural Networks for Automobile Insurance Customers.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Asprey05	incollection	Project Management for IT Projects.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Chin05	incollection	Incremental Expansion of a Distributed Database Systems.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/AspreyM05	incollection	Integrative Document and Content Management Solutions.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/ChouDP05	incollection	Managing Strategic IT Investment Decisions.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Aurum05	incollection	Innovative Thinking in Software Development.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Choudhary05	incollection	Effective Learning Through Optimum Distance Among Team Members.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Avdic05	incollection	User Spreadsheet Systems Development.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/ChuangHZ05	incollection	History and Future Development of Group Support Systems.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/AversanoCL05	incollection	Migrating Legacy Systems to the Web.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/ClareboutELEE05	incollection	Evaluation of an Open Learning Environment.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Babaian05	incollection	Reasoning About User Preferences.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/ClarkeF05	incollection	Portable Portals for M-Commerce.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/BagozziD05	incollection	Collective Intentional Action in Virtual Communities.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/CoakesW05	incollection	Communication Management for Large Modules.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Baim05	incollection	Building Police/Community Relations Through Virtual Communities.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/ColmenaresO05	incollection	Critical Success Factors of ERP Implementation.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/BakerC05	incollection	Executive Judgement in E-Business Strategy.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/CoratellaFHR05	incollection	Mobile Transaction Models Framework.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Banks05	incollection	Audience Response Systems and Face-to-Face Learning.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Cottingham05	incollection	Isoluminance Contours for Animated Visualization.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/BarcaMVM05	incollection	Data Warehouse Development.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Craig05	incollection	Web Initiatives and E-Commerce Strategy.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Barnes05	incollection	IS Implementation in the UK Health Sector.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Crossland05	incollection	Geographic Information Systems as Decision Tools.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Barone05	incollection	Macromedia Flash on the Client and the Server.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/CuadraMC05	incollection	Relationship Cardinality Constraints in Relational Database Design.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Beaumont05	incollection	Outsourcing Information Technology in Australia.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/CuevasFSB05	incollection	Virtual Teams as Sociotechnical Systems.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Becker05	incollection	Web Access by Older Adult Users.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/CunhaP05	incollection	Market of Resources for Agile/Virtual Enterprise Integration.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Becker05a	incollection	Web Usability.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/DaSilva05	incollection	Challenges in Quality of Service for Tomorrow's Networks.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Begg05	incollection	Artificial Intelligence Techniques in Medicine and Healthcare.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Dalcher05	incollection	Methods for Understanding IS Failures.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/BeiseMMW05	incollection	Women in the IT Profession.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/DalyT05	incollection	Exception Rules in Data Mining.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Belanger05	incollection	Virtual Work Research Agenda.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Danalis05	incollection	Web Caching.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Beulen05	incollection	Governance in IT Outsourcing Partnerships.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Daneshgar05	incollection	Context-Aware Framework for ERP.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Blandin05	incollection	Usability Evaluation of Online Learning Programs.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/DangE05	incollection	Hypothetical Reasoning Over Databases.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/BlignautBMT05	incollection	Computer Attitude and Anxiety.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/DarbyshireB05	incollection	Tertiary Education and the Internet.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Blomqvist05	incollection	Trust in Technology Partnerships.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Darmont05	incollection	Object Database Benchmarks.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/BochicchioF05	incollection	Hyper Video for Distance Learning.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/DasguptaC05	incollection	Rotating Banner Advertisements on the World Wide Web.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/BockSK05	incollection	New Perspectives on Rewards and Knowledge Sharing.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/DassoF05	incollection	Formal Methods in Software Engineering.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Boettcher05	incollection	Design Levels for Distance and Online Learning.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Deb05	incollection	Concepts of Emergence Index in Image Databases.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Gao05	incollection	Interactivity and Amusement in Electronic Commerce.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Borchers05	incollection	Media and Personal Involvement in the Perceptions of Data Quality.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Decker05	incollection	Principles of Advanced Database Integrity Checking.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/BordersJ05	incollection	eCRM in a Manufacturing Environment.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/DeryS05	incollection	Alignment of Information Technology and Human Resources Strategies.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/BraberLSV05	incollection	Integrating Security in the Development Process with UML.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Dexter05	incollection	Principles to Guide the Integration and Implementation of Educational Technology.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Brabston05	incollection	Strategic Vision for Information Technology.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/DholakiaBHS05	incollection	The CRM-KDD Nexus.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Bradley05	incollection	Balancing Risks and Rewards of ERP.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/DholakiaK05	incollection	From Digital Divide to Digital Dividend.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Brandon05	incollection	Business Model Application of UML Stereotypes.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Dias05	incollection	Motivation for Using Microcomputers.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Brandon05a	incollection	Globalization of Consumer E-Commerce.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Diaz-Andrade05	incollection	Journalism Online in Peru.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Brandon05b	incollection	Object-Oriented Software Reuse in Business Systems.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Bunker05	incollection	Global Implications of E-Commerce Tool and Artifact Creation.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Disterer05	incollection	Impediments for Knowledge Sharing in Professional Service Firms.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Burgess05	incollection	Issues and Challenges in IT in Small Business.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Dixon05	incollection	Audio Analysis Applications for Music.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Burgstahler05	incollection	Web-Based Distance Learning and the Second Digital Divide.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/DixonKM05	incollection	Data Communications and E-Learning.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/BurkeLH05	incollection	Online Academic Libraries and Distance Learning.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/DobingP05	incollection	Use Cases and the UML.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/BursaJK05	incollection	U.S. Disabilities Legislation Affecting Information Technology.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Dobson05	incollection	Critical Realism as an Underlying Philosophy for IS Research.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/BylT05	incollection	Engineering Emotionally Intelligent Agents.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/DohertyK05	incollection	Managing the Organisational Impacts of Information Systems.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Campbell05	incollection	Learning Portals as New Academic Spaces.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Doorn05	incollection	Database Integrity.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Carlsson05	incollection	Critical Realism in IS Research.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Dragan05	incollection	Informationbase - A New Information System Layer.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/Carroll05	incollection	Building Educational Technology Partnerships Through Participatory Design.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Dron05	incollection	Self-Organizing Networked Learning Environments.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/CartonA05	incollection	Recursive Nature of the Market for Enterprise Applications.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Duan05	incollection	E-Commerce Training for SMEs.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/DuanX05	incollection	Decision Support Systems in Small Businesses.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/Duchastel05	incollection	Learnability.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/DurrettBP05	incollection	Contingency Theory, Agent-Based Systems and a Virtual Advisor.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Dustdar05	incollection	Process-Aware Information Systems for Virtual Teamwork.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Dykman05	incollection	Assessing the Value of Information Systems Investments.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Edwards05	incollection	Business Processes and Knowledge Management.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/Edwards05a	incollection	Moderator in Governmen t-Initiated Online Discussions.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Erbas05	incollection	Wireless Ad Hoc Networking.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/EricssonA05	incollection	Knowledge Management Systems Acceptance.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/EstevesP05	incollection	An ERP Life-Cycle Costs Model.	Encyclopedia of Information Science and Technology (I)	2005	
+books/idea/encyclopedia2005/FalconeC05	incollection	Socio-Cognitive Model of Trust.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Farag05	incollection	Video Content-Based Retrieval Techniques.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/FavreMP05	incollection	Forward Engineering of UML Static Models.	Encyclopedia of Information Science and Technology (II)	2005	
+books/idea/encyclopedia2005/FeliceR05	incollection	Reuse of Formal Specifications.	Encyclopedia of Information Science and Technology (IV)	2005	
+books/idea/encyclopedia2005/Fernandez05	incollection	Trust Placement Process in Metateam Projects.	Encyclopedia of Information Science and Technology (V)	2005	
+books/idea/encyclopedia2005/Fernando05	incollection	Issues of E-Learning in Third World Countries.	Encyclopedia of Information Science and Technology (III)	2005	
+books/idea/encyclopedia2005/FerrisM05	incollection	Teams and Electronic Technologies.	Encyclopedia of Information Science and Technology (V)	2005	
