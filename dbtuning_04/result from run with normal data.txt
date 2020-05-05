@@ -1,0 +1,252 @@
+Driver found.
+Connection established.
+Cleaning db... ok
+Initializing tables... ok
+Fetching random values... ok
+
+
+Starting clustering BTREE index test:
+
+---QUERY 1 START---
+Starting point query test (pubID = ...)... 
+
+--EXPLAIN ANALYZE QUERY 1--
+	Index Scan using "publ_PUBID_idx" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.142..0.144 rows=1 loops=1)
+	  Index Cond: (("pubID")::text = 'journals/dm/ChenYY01'::text)
+	Planning Time: 0.544 ms
+	Execution Time: 0.181 ms
+
+ Point query test ok! 
+	 Elapsed time: 60.000515 seconds
+	 Throughput [1/s]: 1889
+---QUERY 1 END---
+
+---QUERY 2 START---
+Starting low selectivity test (booktitle = ...)... 
+
+--EXPLAIN ANALYZE QUERY 2--
+	Index Scan using "publ_BOOKTITLE_idx" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.095..0.095 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = 'Internet der Dinge'::text)
+	Planning Time: 0.446 ms
+	Execution Time: 0.114 ms
+
+ Low selectivity test ok! 
+	 Elapsed time: 60.000153seconds
+	 Throughput [1/s]: 2945
+---QUERY 2 END---
+
+---QUERY 3 START---
+Starting low selectivity test with multipoint Query with IN predicate: IN List (...)...
+
+--EXPLAIN ANALYZE QUERY 3--
+	Index Scan using "publ_LIST_idx" on "Publ"  (cost=0.43..17.34 rows=3 width=112) (actual time=0.166..0.215 rows=3 loops=1)
+	  Index Cond: (("pubID")::text = ANY ('{series/vdi/PaterS07,series/vdi/LiekenbrockE07,series/vdi/Bock07}'::text[]))
+	Planning Time: 2.527 ms
+	Execution Time: 0.245 ms
+
+ Low selectivity test with multipoint ok! 
+	 Elapsed time: 60.000095seconds
+	 Throughput [1/s]: 2345
+---QUERY 3 END---
+
+---QUERY 4 START---
+Starting high selectivity test (year = ...)... 
+
+--EXPLAIN ANALYZE QUERY 4--
+	Index Scan using "publ_YEAR_idx" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.058..0.058 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = '2006'::text)
+	Planning Time: 0.261 ms
+	Execution Time: 0.084 ms
+
+ High selectivity test ok! 
+	 Elapsed time: 60.000145seconds
+	 Throughput [1/s]: 1631
+---QUERY 4 END---
+
+Tests ok!
+
+Cleaning db... ok
+Initializing tables... ok
+Starting non-clustering BTREE index test:
+
+---QUERY 1 START---
+Starting point query test (pubID = ...)... 
+
+--EXPLAIN ANALYZE QUERY 1--
+	Index Scan using "publ_PUBID_idx" on "Publ"  (cost=0.43..8.45 rows=1 width=1548) (actual time=0.329..0.333 rows=1 loops=1)
+	  Index Cond: (("pubID")::text = 'journals/cj/FraenkelK90'::text)
+	Planning Time: 3.279 ms
+	Execution Time: 0.376 ms
+
+ Point query test ok! 
+	 Elapsed time: 60.00043 seconds
+	 Throughput [1/s]: 2035
+---QUERY 1 END---
+
+---QUERY 2 START---
+Starting low selectivity test (booktitle = ...)... 
+
+--EXPLAIN ANALYZE QUERY 2--
+	Index Scan using "publ_BOOKTITLE_idx" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.192..0.193 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = 'Internet der Dinge'::text)
+	Planning Time: 3.606 ms
+	Execution Time: 0.235 ms
+
+ Low selectivity test ok! 
+	 Elapsed time: 60.000046seconds
+	 Throughput [1/s]: 2109
+---QUERY 2 END---
+
+---QUERY 3 START---
+Starting low selectivity test with multipoint Query with IN predicate: IN List (...)...
+
+--EXPLAIN ANALYZE QUERY 3--
+	Index Scan using "publ_LIST_idx" on "Publ"  (cost=0.43..18.07 rows=3 width=112) (actual time=0.240..0.337 rows=3 loops=1)
+	  Index Cond: (("pubID")::text = ANY ('{series/vdi/PaterS07,series/vdi/LiekenbrockE07,series/vdi/Bock07}'::text[]))
+	Planning Time: 4.468 ms
+	Execution Time: 0.382 ms
+
+ Low selectivity test with multipoint ok! 
+	 Elapsed time: 60.000473seconds
+	 Throughput [1/s]: 1986
+---QUERY 3 END---
+
+---QUERY 4 START---
+Starting high selectivity test (year = ...)... 
+
+--EXPLAIN ANALYZE QUERY 4--
+	Index Scan using "publ_YEAR_idx" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.046..0.047 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = '2006'::text)
+	Planning Time: 0.264 ms
+	Execution Time: 0.072 ms
+
+ High selectivity test ok! 
+	 Elapsed time: 60.000072seconds
+	 Throughput [1/s]: 1263
+---QUERY 4 END---
+
+Tests ok!
+
+Cleaning db... ok
+Initializing tables... ok
+Starting non-clustering HASH index test:
+
+---QUERY 1 START---
+Starting point query test (pubID = ...)... 
+
+--EXPLAIN ANALYZE QUERY 1--
+	Index Scan using "publ_PUBID_idx" on "Publ"  (cost=0.00..8.02 rows=1 width=1548) (actual time=0.117..0.119 rows=1 loops=1)
+	  Index Cond: (("pubID")::text = 'conf/nma/Chryssoverghi06'::text)
+	Planning Time: 3.495 ms
+	Execution Time: 0.153 ms
+
+ Point query test ok! 
+	 Elapsed time: 60.00053 seconds
+	 Throughput [1/s]: 2321
+---QUERY 1 END---
+
+---QUERY 2 START---
+Starting low selectivity test (booktitle = ...)... 
+
+--EXPLAIN ANALYZE QUERY 2--
+	Index Scan using "publ_BOOKTITLE_idx" on "Publ"  (cost=0.00..8.02 rows=1 width=112) (actual time=0.014..0.014 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = 'Internet der Dinge'::text)
+	Planning Time: 2.323 ms
+	Execution Time: 0.035 ms
+
+ Low selectivity test ok! 
+	 Elapsed time: 60.00004seconds
+	 Throughput [1/s]: 2553
+---QUERY 2 END---
+
+---QUERY 3 START---
+Starting low selectivity test with multipoint Query with IN predicate: IN List (...)...
+
+--EXPLAIN ANALYZE QUERY 3--
+	Index Scan using "Publ_pkey" on "Publ"  (cost=0.43..18.10 rows=3 width=112) (actual time=0.147..0.168 rows=3 loops=1)
+	  Index Cond: (("pubID")::text = ANY ('{series/vdi/PaterS07,series/vdi/LiekenbrockE07,series/vdi/Bock07}'::text[]))
+	Planning Time: 1.739 ms
+	Execution Time: 0.182 ms
+
+ Low selectivity test with multipoint ok! 
+	 Elapsed time: 60.000454seconds
+	 Throughput [1/s]: 2312
+---QUERY 3 END---
+
+---QUERY 4 START---
+Starting high selectivity test (year = ...)... 
+
+--EXPLAIN ANALYZE QUERY 4--
+	Index Scan using "publ_YEAR_idx" on "Publ"  (cost=0.00..8.02 rows=1 width=112) (actual time=0.016..0.016 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = '2006'::text)
+	Planning Time: 0.326 ms
+	Execution Time: 0.049 ms
+
+ High selectivity test ok! 
+	 Elapsed time: 60.000504seconds
+	 Throughput [1/s]: 1333
+---QUERY 4 END---
+
+Tests ok!
+
+Cleaning db... ok
+Initializing tables... ok
+Starting  table scan index test:
+
+---QUERY 1 START---
+Starting point query test (pubID = ...)... 
+
+--EXPLAIN ANALYZE QUERY 1--
+	Index Scan using "Publ_pkey" on "Publ"  (cost=0.42..8.44 rows=1 width=1548) (actual time=0.073..0.074 rows=1 loops=1)
+	  Index Cond: (("pubID")::text = 'conf/ijcai/Oleson77'::text)
+	Planning Time: 0.138 ms
+	Execution Time: 0.093 ms
+
+ Point query test ok! 
+	 Elapsed time: 60.00047 seconds
+	 Throughput [1/s]: 2106
+---QUERY 1 END---
+
+---QUERY 2 START---
+Starting low selectivity test (booktitle = ...)... 
+
+--EXPLAIN ANALYZE QUERY 2--
+	Index Scan using "Publ_pkey" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.037..0.037 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = 'Internet der Dinge'::text)
+	Planning Time: 0.107 ms
+	Execution Time: 0.057 ms
+
+ Low selectivity test ok! 
+	 Elapsed time: 60.000015seconds
+	 Throughput [1/s]: 3480
+---QUERY 2 END---
+
+---QUERY 3 START---
+Starting low selectivity test with multipoint Query with IN predicate: IN List (...)...
+
+--EXPLAIN ANALYZE QUERY 3--
+	Index Scan using "Publ_pkey" on "Publ"  (cost=0.43..18.10 rows=3 width=112) (actual time=0.084..0.118 rows=3 loops=1)
+	  Index Cond: (("pubID")::text = ANY ('{series/vdi/PaterS07,series/vdi/LiekenbrockE07,series/vdi/Bock07}'::text[]))
+	Planning Time: 0.109 ms
+	Execution Time: 0.132 ms
+
+ Low selectivity test with multipoint ok! 
+	 Elapsed time: 60.00005seconds
+	 Throughput [1/s]: 2303
+---QUERY 3 END---
+
+---QUERY 4 START---
+Starting high selectivity test (year = ...)... 
+
+--EXPLAIN ANALYZE QUERY 4--
+	Index Scan using "Publ_pkey" on "Publ"  (cost=0.43..8.45 rows=1 width=112) (actual time=0.045..0.045 rows=0 loops=1)
+	  Index Cond: (("pubID")::text = '2006'::text)
+	Planning Time: 0.116 ms
+	Execution Time: 0.067 ms
+
+ High selectivity test ok! 
+	 Elapsed time: 60.00008seconds
+	 Throughput [1/s]: 2000
+---QUERY 4 END---
+
+Tests ok!
