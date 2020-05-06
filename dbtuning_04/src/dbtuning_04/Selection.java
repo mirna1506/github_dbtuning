@@ -44,19 +44,19 @@ public class Selection {
 
 		//----------------------Connection to DB----------------------
 		//DBTuningss2020
-		/*String host = "biber.cosy.sbg.ac.at";
+		String host = "biber.cosy.sbg.ac.at";
 		String port = "5432";
 		String database = "dbtuning_ss2020";
-		String pwd = "huth8lithe5E";
-		String user = "ibrezovic";*/
+		String pwd = "Iechei5eexai";
+		String user = "mmrazovic";
 
     	
 		//Localhost
-		String host = "localhost";
-		String port = "5432";
-		String database = "postgres";
-		String pwd = "postgres";
-		String user = "postgres";
+//		String host = "localhost";
+//		String port = "5432";
+//		String database = "postgres";
+//		String pwd = "postgres";
+//		String user = "postgres";
 
 
 		String url = "jdbc:postgresql://" + host + ":" + port + "/" + database;
@@ -264,7 +264,7 @@ public class Selection {
         
         stopTime = System.nanoTime();
         duration = ((float) (stopTime - startTime)) / 1000000000;
-        System.out.println("\n Low selectivity test ok! \n\t Elapsed time: " + duration + "seconds");
+        System.out.println("\n Low selectivity test ok! \n\t Elapsed time: " + duration + " seconds");
         System.out.println("\t Throughput [1/s]: " + (executedQueries / ((stopTime - startTime) / 1000 / 1000 / 1000)));
         System.out.print("---QUERY 2 END---");
         System.out.print("\n");
@@ -304,7 +304,7 @@ public class Selection {
         
         stopTime = System.nanoTime();
         duration = ((float) (stopTime - startTime)) / 1000000000;
-        System.out.println("\n Low selectivity test with multipoint ok! \n\t Elapsed time: " + duration + "seconds");
+        System.out.println("\n Low selectivity test with multipoint ok! \n\t Elapsed time: " + duration + " seconds");
         System.out.println("\t Throughput [1/s]: " + (executedQueries / ((stopTime - startTime) / 1000000000)));
         System.out.print("---QUERY 3 END---");
         System.out.print("\n");
@@ -342,7 +342,7 @@ public class Selection {
         
         stopTime = System.nanoTime();
         duration = ((float) (stopTime - startTime)) / 1000000000;
-        System.out.println("\n High selectivity test ok! \n\t Elapsed time: " + duration + "seconds");
+        System.out.println("\n High selectivity test ok! \n\t Elapsed time: " + duration + " seconds");
         System.out.println("\t Throughput [1/s]: " + (executedQueries / ((stopTime - startTime) / 1000000000)));
         System.out.print("---QUERY 4 END---");
         System.out.print("\n");

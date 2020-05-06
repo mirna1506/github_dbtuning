@@ -31,7 +31,7 @@ Starting low selectivity test (booktitle = ...)...
 	Execution Time: 0.114 ms
 
  Low selectivity test ok! 
-	 Elapsed time: 60.000153seconds
+	 Elapsed time: 60.000153 seconds
 	 Throughput [1/s]: 2945
 ---QUERY 2 END---
 
@@ -45,7 +45,7 @@ Starting low selectivity test with multipoint Query with IN predicate: IN List (
 	Execution Time: 0.245 ms
 
  Low selectivity test with multipoint ok! 
-	 Elapsed time: 60.000095seconds
+	 Elapsed time: 60.000095 seconds
 	 Throughput [1/s]: 2345
 ---QUERY 3 END---
 
@@ -59,7 +59,7 @@ Starting high selectivity test (year = ...)...
 	Execution Time: 0.084 ms
 
  High selectivity test ok! 
-	 Elapsed time: 60.000145seconds
+	 Elapsed time: 60.000145 seconds
 	 Throughput [1/s]: 1631
 ---QUERY 4 END---
 
@@ -93,7 +93,7 @@ Starting low selectivity test (booktitle = ...)...
 	Execution Time: 0.235 ms
 
  Low selectivity test ok! 
-	 Elapsed time: 60.000046seconds
+	 Elapsed time: 60.000046 seconds
 	 Throughput [1/s]: 2109
 ---QUERY 2 END---
 
@@ -107,7 +107,7 @@ Starting low selectivity test with multipoint Query with IN predicate: IN List (
 	Execution Time: 0.382 ms
 
  Low selectivity test with multipoint ok! 
-	 Elapsed time: 60.000473seconds
+	 Elapsed time: 60.000473 seconds
 	 Throughput [1/s]: 1986
 ---QUERY 3 END---
 
@@ -121,7 +121,7 @@ Starting high selectivity test (year = ...)...
 	Execution Time: 0.072 ms
 
  High selectivity test ok! 
-	 Elapsed time: 60.000072seconds
+	 Elapsed time: 60.000072 seconds
 	 Throughput [1/s]: 1263
 ---QUERY 4 END---
 
@@ -155,7 +155,7 @@ Starting low selectivity test (booktitle = ...)...
 	Execution Time: 0.035 ms
 
  Low selectivity test ok! 
-	 Elapsed time: 60.00004seconds
+	 Elapsed time: 60.00004 seconds
 	 Throughput [1/s]: 2553
 ---QUERY 2 END---
 
@@ -169,7 +169,7 @@ Starting low selectivity test with multipoint Query with IN predicate: IN List (
 	Execution Time: 0.182 ms
 
  Low selectivity test with multipoint ok! 
-	 Elapsed time: 60.000454seconds
+	 Elapsed time: 60.000454 seconds
 	 Throughput [1/s]: 2312
 ---QUERY 3 END---
 
@@ -183,7 +183,7 @@ Starting high selectivity test (year = ...)...
 	Execution Time: 0.049 ms
 
  High selectivity test ok! 
-	 Elapsed time: 60.000504seconds
+	 Elapsed time: 60.000504 seconds
 	 Throughput [1/s]: 1333
 ---QUERY 4 END---
 
@@ -217,7 +217,7 @@ Starting low selectivity test (booktitle = ...)...
 	Execution Time: 0.057 ms
 
  Low selectivity test ok! 
-	 Elapsed time: 60.000015seconds
+	 Elapsed time: 60.000015 seconds
 	 Throughput [1/s]: 3480
 ---QUERY 2 END---
 
@@ -231,7 +231,7 @@ Starting low selectivity test with multipoint Query with IN predicate: IN List (
 	Execution Time: 0.132 ms
 
  Low selectivity test with multipoint ok! 
-	 Elapsed time: 60.00005seconds
+	 Elapsed time: 60.00005 seconds
 	 Throughput [1/s]: 2303
 ---QUERY 3 END---
 
@@ -245,7 +245,7 @@ Starting high selectivity test (year = ...)...
 	Execution Time: 0.067 ms
 
  High selectivity test ok! 
-	 Elapsed time: 60.00008seconds
+	 Elapsed time: 60.00008 seconds
 	 Throughput [1/s]: 2000
 ---QUERY 4 END---
 
