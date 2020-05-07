@@ -44,19 +44,19 @@ public class Selection {
 
 		//----------------------Connection to DB----------------------
 		//DBTuningss2020
-		String host = "biber.cosy.sbg.ac.at";
-		String port = "5432";
-		String database = "dbtuning_ss2020";
-		String pwd = "Iechei5eexai";
-		String user = "mmrazovic";
+//		String host = "biber.cosy.sbg.ac.at";
+//		String port = "5432";
+//		String database = "dbtuning_ss2020";
+//		String pwd = "Iechei5eexai";
+//		String user = "mmrazovic";
 
     	
 		//Localhost
-//		String host = "localhost";
-//		String port = "5432";
-//		String database = "postgres";
-//		String pwd = "postgres";
-//		String user = "postgres";
+		String host = "localhost";
+		String port = "5432";
+		String database = "postgres";
+		String pwd = "postgres";
+		String user = "postgres";
 
 
 		String url = "jdbc:postgresql://" + host + ":" + port + "/" + database;
@@ -212,7 +212,7 @@ public class Selection {
         System.out.print("Starting point query test (pubID = ...)... ");
         System.out.print("\n");
         System.out.print("\n");
-        startTime = System.nanoTime();
+        startTime = System.nanoTime(); 
         stopAt = startTime + ((long) 60 * 1000000000 ); // stop after one minute 
  
         System.out.println("--EXPLAIN ANALYZE QUERY 1--");
@@ -356,7 +356,9 @@ public class Selection {
     private static void dropIndexes(Connection con) throws SQLException {
         con.createStatement().execute("DROP INDEX IF EXISTS \"publ_pubid_idx\";");
         con.createStatement().execute("DROP INDEX IF EXISTS \"publ_booktitle_idx\";");
+        con.createStatement().execute("DROP INDEX IF EXISTS \"publ_list_idx\";");
         con.createStatement().execute("DROP INDEX IF EXISTS \"publ_year_idx\";");
+        con.createStatement().execute("DROP INDEX IF EXISTS \"publ_pkey_idx\";");
     }
     
     public static void explain_analyze(Connection con, String str) throws SQLException{
