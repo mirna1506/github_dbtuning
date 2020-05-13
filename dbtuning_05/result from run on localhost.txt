@@ -1,0 +1,323 @@
+Driver found.
+Connection established.
+1) Testing proposed join strategies: 
+
+	1.a) Testing without indexes: 
+
+		Cleaning db...ok
+		Initializing tables...ok
+		--EXECUTING FIRST JOIN-- 
+		Merge Join  (cost=371966.24..4643503.44 rows=284647016 width=632) (actual time=23270.178..27978.111 rows=3095201 loops=1)
+		  Merge Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		  ->  Sort  (cost=110821.75..111101.28 rows=111810 width=792) (actual time=6802.287..7660.863 rows=1233208 loops=1)
+		        Sort Key: "Publ"."pubID"
+		        Sort Method: external merge  Disk: 121472kB
+		        ->  Seq Scan on "Publ"  (cost=0.00..23480.10 rows=111810 width=792) (actual time=0.092..374.189 rows=1233214 loops=1)
+		  ->  Materialize  (cost=261144.49..263690.30 rows=509162 width=392) (actual time=16467.880..18831.493 rows=3095201 loops=1)
+		        ->  Sort  (cost=261144.49..262417.39 rows=509162 width=392) (actual time=16467.868..18518.816 rows=3095201 loops=1)
+		              Sort Key: "Auth"."pubID"
+		              Sort Method: external merge  Disk: 148184kB
+		              ->  Seq Scan on "Auth"  (cost=0.00..31889.62 rows=509162 width=392) (actual time=0.038..628.570 rows=3095201 loops=1)
+		Planning Time: 0.452 ms
+		Execution Time: 28077.120 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=43918.96..73348.69 rows=24 width=67) (actual time=398.488..555.537 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Parallel Hash Join  (cost=42918.96..72346.29 rows=10 width=67) (actual time=312.286..465.570 rows=61 loops=3)
+		        Hash Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		        ->  Parallel Seq Scan on "Publ"  (cost=0.00..27500.39 rows=513839 width=89) (actual time=0.477..118.778 rows=411071 loops=3)
+		        ->  Parallel Hash  (cost=42918.84..42918.84 rows=10 width=23) (actual time=275.049..275.049 rows=61 loops=3)
+		              Buckets: 1024  Batches: 1  Memory Usage: 104kB
+		              ->  Parallel Seq Scan on "Auth"  (cost=0.00..42918.84 rows=10 width=23) (actual time=32.496..274.911 rows=61 loops=3)
+		                    Filter: ((name)::text = 'Divesh Srivastava'::text)
+		                    Rows Removed by Filter: 1031673
+		Planning Time: 33.003 ms
+		Execution Time: 556.461 ms
+	 Task 1a ok. 
+
+	1.b) Testing with non-clustering index on Publ.pubID: 
+
+		Cleaning db...ok
+		Initializing tables...ok
+		--EXECUTING FIRST JOIN-- 
+		Gather  (cost=29051.22..132781.58 rows=358573 width=531) (actual time=11794.134..21413.344 rows=3095201 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Parallel Hash Join  (cost=28051.22..95924.28 rows=149405 width=531) (actual time=11750.604..15635.221 rows=1031734 loops=3)
+		        Hash Cond: (("Auth"."pubID")::text = ("Publ"."pubID")::text)
+		        ->  Parallel Seq Scan on "Auth"  (cost=0.00..39694.67 rows=1289667 width=38) (actual time=0.508..186.315 rows=1031734 loops=3)
+		        ->  Parallel Hash  (cost=22827.88..22827.88 rows=46588 width=792) (actual time=11068.058..11068.059 rows=411071 loops=3)
+		              Buckets: 8192 (originally 8192)  Batches: 64 (originally 32)  Memory Usage: 2496kB
+		              ->  Parallel Seq Scan on "Publ"  (cost=0.00..22827.88 rows=46588 width=792) (actual time=0.957..320.489 rows=411071 loops=3)
+		Planning Time: 4.006 ms
+		Execution Time: 21563.370 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=1000.42..44003.49 rows=3 width=516) (actual time=86.137..432.300 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.42..43003.19 rows=1 width=516) (actual time=37.927..354.177 rows=61 loops=3)
+		        ->  Parallel Seq Scan on "Auth"  (cost=0.00..42918.84 rows=10 width=23) (actual time=36.353..349.267 rows=61 loops=3)
+		              Filter: ((name)::text = 'Divesh Srivastava'::text)
+		              Rows Removed by Filter: 1031673
+		        ->  Index Scan using "Publ_pubID_key" on "Publ"  (cost=0.42..8.44 rows=1 width=792) (actual time=0.076..0.076 rows=1 loops=183)
+		              Index Cond: (("pubID")::text = ("Auth"."pubID")::text)
+		Planning Time: 0.199 ms
+		Execution Time: 433.060 ms
+	 Task 1b ok. 
+
+	1.c) Testing with two clustering indexes: 
+
+		Cleaning db...ok
+		Initializing tables...ok
+		--EXECUTING FIRST JOIN-- 
+		Hash Join  (cost=68240.32..234989.34 rows=3095201 width=82) (actual time=753.697..7055.045 rows=3095201 loops=1)
+		  Hash Cond: (("Auth"."pubID")::text = ("Publ"."pubID")::text)
+		  ->  Seq Scan on "Auth"  (cost=0.00..57761.01 rows=3095201 width=38) (actual time=0.015..462.774 rows=3095201 loops=1)
+		  ->  Hash  (cost=34760.14..34760.14 rows=1233214 width=89) (actual time=707.354..707.354 rows=1233214 loops=1)
+		        Buckets: 32768  Batches: 64  Memory Usage: 2566kB
+		        ->  Seq Scan on "Publ"  (cost=0.00..34760.14 rows=1233214 width=89) (actual time=0.010..284.979 rows=1233214 loops=1)
+		Planning Time: 1.496 ms
+		Execution Time: 7131.745 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=1000.43..44016.89 rows=25 width=67) (actual time=80.019..353.574 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.43..43014.39 rows=10 width=67) (actual time=31.551..294.121 rows=61 loops=3)
+		        ->  Parallel Seq Scan on "Auth"  (cost=0.00..42929.84 rows=10 width=23) (actual time=30.490..289.333 rows=61 loops=3)
+		              Filter: ((name)::text = 'Divesh Srivastava'::text)
+		              Rows Removed by Filter: 1031673
+		        ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..8.45 rows=1 width=89) (actual time=0.075..0.076 rows=1 loops=183)
+		              Index Cond: (("pubID")::text = ("Auth"."pubID")::text)
+		Planning Time: 0.845 ms
+		Execution Time: 353.692 ms
+	 Task 1c ok. 
+
+Task 1 ok. 
+
+2.) Testing indexed nested loop join: 
+
+	2.a) Testing with index on Publ.pubID: 
+
+		Cleaning db...ok
+		Initializing tables...ok
+		--EXECUTING FIRST JOIN-- 
+		Gather  (cost=1000.43..225501.12 rows=509162 width=184) (actual time=0.992..15215.912 rows=3095201 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.43..173584.92 rows=212151 width=184) (actual time=0.503..14612.300 rows=1031734 loops=3)
+		        ->  Parallel Seq Scan on "Auth"  (cost=0.00..28919.51 rows=212151 width=392) (actual time=0.404..380.405 rows=1031734 loops=3)
+		        ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..0.67 rows=1 width=90) (actual time=0.013..0.013 rows=1 loops=3095201)
+		              Index Cond: (("pubID")::text = ("Auth"."pubID")::text)
+		Planning Time: 0.403 ms
+		Execution Time: 15338.856 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=1000.43..38755.10 rows=2546 width=68) (actual time=86.372..768.872 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.43..37500.50 rows=1061 width=68) (actual time=38.398..371.275 rows=61 loops=3)
+		        ->  Parallel Seq Scan on "Auth"  (cost=0.00..29449.89 rows=1061 width=276) (actual time=37.535..367.509 rows=61 loops=3)
+		              Filter: ((name)::text = 'Divesh Srivastava'::text)
+		              Rows Removed by Filter: 1031673
+		        ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..7.58 rows=1 width=90) (actual time=0.058..0.059 rows=1 loops=183)
+		              Index Cond: (("pubID")::text = ("Auth"."pubID")::text)
+		Planning Time: 0.241 ms
+		Execution Time: 768.958 ms
+	 Task 2a ok. 
+
+	2.b) Testing with index on Auth.pubID: 
+
+		--EXECUTING FIRST JOIN-- 
+		Gather  (cost=1000.55..738109.50 rows=3095201 width=83) (actual time=0.867..7849.964 rows=3095201 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.56..427589.40 rows=1289667 width=83) (actual time=0.526..7289.373 rows=1031734 loops=3)
+		        ->  Parallel Seq Scan on "Publ"  (cost=0.00..27500.39 rows=513839 width=90) (actual time=0.423..149.982 rows=411071 loops=3)
+		        ->  Index Scan using auth_pubid_idx on "Auth"  (cost=0.56..0.75 rows=3 width=38) (actual time=0.016..0.016 rows=3 loops=1233214)
+		              Index Cond: (("pubID")::text = ("Publ"."pubID")::text)
+		Planning Time: 0.860 ms
+		Execution Time: 7968.559 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=1000.55..422168.91 rows=25 width=68) (actual time=1129.260..8190.122 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.56..421166.41 rows=10 width=68) (actual time=833.964..8071.213 rows=61 loops=3)
+		        ->  Parallel Seq Scan on "Publ"  (cost=0.00..27500.39 rows=513839 width=90) (actual time=0.478..161.415 rows=411071 loops=3)
+		        ->  Index Scan using auth_pubid_idx on "Auth"  (cost=0.56..0.76 rows=1 width=23) (actual time=0.019..0.019 rows=0 loops=1233214)
+		              Index Cond: (("pubID")::text = ("Publ"."pubID")::text)
+		              Filter: ((name)::text = 'Divesh Srivastava'::text)
+		              Rows Removed by Filter: 3
+		Planning Time: 0.171 ms
+		Execution Time: 8190.180 ms
+	 Task 2b ok. 
+
+	2.c) Testing with index on Publ.pubID and Auth.pubID: 
+
+		--EXECUTING FIRST JOIN-- 
+		Gather  (cost=1000.55..752240.07 rows=3095201 width=82) (actual time=0.885..9481.923 rows=3095201 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.56..441719.97 rows=1289667 width=82) (actual time=0.726..8769.791 rows=1031734 loops=3)
+		        ->  Parallel Seq Scan on "Publ"  (cost=0.00..27500.39 rows=513839 width=89) (actual time=0.443..226.634 rows=411071 loops=3)
+		        ->  Index Scan using auth_pubid_idx on "Auth"  (cost=0.56..0.77 rows=4 width=38) (actual time=0.019..0.020 rows=3 loops=1233214)
+		              Index Cond: (("pubID")::text = ("Publ"."pubID")::text)
+		Planning Time: 0.326 ms
+		Execution Time: 9631.952 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=1000.43..44005.79 rows=24 width=67) (actual time=144.746..544.073 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Nested Loop  (cost=0.43..43003.39 rows=10 width=67) (actual time=57.159..412.715 rows=61 loops=3)
+		        ->  Parallel Seq Scan on "Auth"  (cost=0.00..42918.84 rows=10 width=23) (actual time=56.050..405.636 rows=61 loops=3)
+		              Filter: ((name)::text = 'Divesh Srivastava'::text)
+		              Rows Removed by Filter: 1031673
+		        ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..8.45 rows=1 width=89) (actual time=0.111..0.112 rows=1 loops=183)
+		              Index Cond: (("pubID")::text = ("Auth"."pubID")::text)
+		Planning Time: 0.170 ms
+		Execution Time: 544.132 ms
+	 Task 2c ok. 
+
+ Task 2 ok. 
+
+3.) Testing sort-merge join: 
+
+	3.a) Testing without index: 
+
+		--EXECUTING FIRST JOIN-- 
+		Gather  (cost=528031.98..866419.29 rows=3095201 width=82) (actual time=35902.877..45268.947 rows=3095201 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Merge Join  (cost=527031.98..555899.19 rows=1289667 width=82) (actual time=36058.381..42148.961 rows=1031734 loops=3)
+		        Merge Cond: (("Auth"."pubID")::text = ("Publ"."pubID")::text)
+		        ->  Sort  (cost=241118.63..244342.80 rows=1289667 width=38) (actual time=11152.305..12698.666 rows=1031734 loops=3)
+		              Sort Key: "Auth"."pubID"
+		              Sort Method: external merge  Disk: 49856kB
+		              Worker 0:  Sort Method: external merge  Disk: 48928kB
+		              Worker 1:  Sort Method: external merge  Disk: 49504kB
+		              ->  Parallel Seq Scan on "Auth"  (cost=0.00..39694.67 rows=1289667 width=38) (actual time=0.399..232.974 rows=1031734 loops=3)
+		        ->  Materialize  (cost=285913.35..292079.42 rows=1233214 width=89) (actual time=24897.690..27130.377 rows=1856276 loops=3)
+		              ->  Sort  (cost=285913.35..288996.38 rows=1233214 width=89) (actual time=24897.680..26761.477 rows=1229487 loops=3)
+		                    Sort Key: "Publ"."pubID"
+		                    Sort Method: external merge  Disk: 121472kB
+		                    Worker 0:  Sort Method: external merge  Disk: 121472kB
+		                    Worker 1:  Sort Method: external merge  Disk: 121480kB
+		                    ->  Seq Scan on "Publ"  (cost=0.00..34694.14 rows=1233214 width=89) (actual time=0.533..590.035 rows=1233214 loops=3)
+		Planning Time: 3.912 ms
+		Execution Time: 45444.965 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Gather  (cost=169073.54..171642.81 rows=24 width=67) (actual time=5165.088..6098.805 rows=183 loops=1)
+		  Workers Planned: 2
+		  Workers Launched: 2
+		  ->  Merge Join  (cost=168073.54..170640.41 rows=10 width=67) (actual time=5130.756..5936.638 rows=61 loops=3)
+		        Merge Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		        ->  Sort  (cost=102584.98..103869.58 rows=513839 width=89) (actual time=4280.191..4895.216 rows=409986 loops=3)
+		              Sort Key: "Publ"."pubID"
+		              Sort Method: external merge  Disk: 39328kB
+		              Worker 0:  Sort Method: external merge  Disk: 42184kB
+		              Worker 1:  Sort Method: external merge  Disk: 40080kB
+		              ->  Parallel Seq Scan on "Publ"  (cost=0.00..27500.39 rows=513839 width=89) (actual time=0.406..161.864 rows=411071 loops=3)
+		        ->  Sort  (cost=65488.56..65488.62 rows=24 width=23) (actual time=733.850..733.878 rows=183 loops=3)
+		              Sort Key: "Auth"."pubID"
+		              Sort Method: quicksort  Memory: 39kB
+		              Worker 0:  Sort Method: quicksort  Memory: 39kB
+		              Worker 1:  Sort Method: quicksort  Memory: 39kB
+		              ->  Seq Scan on "Auth"  (cost=0.00..65488.01 rows=24 width=23) (actual time=51.083..732.761 rows=183 loops=3)
+		                    Filter: ((name)::text = 'Divesh Srivastava'::text)
+		                    Rows Removed by Filter: 3095018
+		Planning Time: 0.249 ms
+		Execution Time: 6105.353 ms
+	 Task 3a ok. 
+
+	3.b) Testing with two non-clustering indexes: 
+
+		--EXECUTING FIRST JOIN-- 
+		Merge Join  (cost=0.98..263785.90 rows=3095201 width=82) (actual time=0.011..3453.195 rows=3095201 loops=1)
+		  Merge Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		  ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..73130.78 rows=1233214 width=89) (actual time=0.004..659.540 rows=1233208 loops=1)
+		  ->  Index Scan using auth_pubid_idx on "Auth"  (cost=0.56..148957.59 rows=3095201 width=38) (actual time=0.003..1077.221 rows=3095201 loops=1)
+		Planning Time: 0.645 ms
+		Execution Time: 3531.287 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Merge Join  (cost=43922.35..120060.59 rows=25 width=67) (actual time=742.922..1767.721 rows=183 loops=1)
+		  Merge Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		  ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..73130.78 rows=1233214 width=89) (actual time=0.007..585.404 rows=1229958 loops=1)
+		  ->  Sort  (cost=43921.92..43921.98 rows=25 width=23) (actual time=612.003..612.047 rows=183 loops=1)
+		        Sort Key: "Auth"."pubID"
+		        Sort Method: quicksort  Memory: 39kB
+		        ->  Gather  (cost=1000.00..43921.34 rows=25 width=23) (actual time=20.274..610.446 rows=183 loops=1)
+		              Workers Planned: 2
+		              Workers Launched: 2
+		              ->  Parallel Seq Scan on "Auth"  (cost=0.00..42918.84 rows=10 width=23) (actual time=40.490..478.516 rows=61 loops=3)
+		                    Filter: ((name)::text = 'Divesh Srivastava'::text)
+		                    Rows Removed by Filter: 1031673
+		Planning Time: 0.418 ms
+		Execution Time: 1767.829 ms
+	 Task 3b ok. 
+
+	3.c) Testing with two clustering indexes: 
+
+		--EXECUTING FIRST JOIN-- 
+		Merge Join  (cost=0.98..248801.80 rows=3095201 width=82) (actual time=0.017..2427.225 rows=3095201 loops=1)
+		  Merge Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		  ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..67009.64 rows=1233214 width=89) (actual time=0.006..343.469 rows=1233208 loops=1)
+		  ->  Index Scan using auth_pubid_idx on "Auth"  (cost=0.56..140088.57 rows=3095201 width=38) (actual time=0.004..643.179 rows=3095201 loops=1)
+		Planning Time: 0.774 ms
+		Execution Time: 2497.417 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Merge Join  (cost=43933.22..113956.37 rows=24 width=67) (actual time=529.077..1464.214 rows=183 loops=1)
+		  Merge Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		  ->  Index Scan using publ_pubid_idx on "Publ"  (cost=0.43..67009.64 rows=1233214 width=89) (actual time=0.004..454.260 rows=1229958 loops=1)
+		  ->  Sort  (cost=43932.79..43932.85 rows=24 width=23) (actual time=429.671..429.714 rows=183 loops=1)
+		        Sort Key: "Auth"."pubID"
+		        Sort Method: quicksort  Memory: 39kB
+		        ->  Gather  (cost=1000.00..43932.24 rows=24 width=23) (actual time=45.698..428.159 rows=183 loops=1)
+		              Workers Planned: 2
+		              Workers Launched: 2
+		              ->  Parallel Seq Scan on "Auth"  (cost=0.00..42929.84 rows=10 width=23) (actual time=18.926..352.715 rows=61 loops=3)
+		                    Filter: ((name)::text = 'Divesh Srivastava'::text)
+		                    Rows Removed by Filter: 1031673
+		Planning Time: 0.356 ms
+		Execution Time: 1464.339 ms
+	 Task 3c ok. 
+
+ Task 3 ok. 
+
+4.) Testing hash join without index: 
+
+		Cleaning db...ok
+		Initializing tables...ok
+		--EXECUTING FIRST JOIN-- 
+		Hash Join  (cost=36015.72..10094673.81 rows=284647016 width=632) (actual time=1063.757..17809.358 rows=3095201 loops=1)
+		  Hash Cond: (("Auth"."pubID")::text = ("Publ"."pubID")::text)
+		  ->  Seq Scan on "Auth"  (cost=0.00..31889.62 rows=509162 width=392) (actual time=0.063..1482.605 rows=3095201 loops=1)
+		  ->  Hash  (cost=23480.10..23480.10 rows=111810 width=792) (actual time=1039.683..1039.683 rows=1233214 loops=1)
+		        Buckets: 8192 (originally 8192)  Batches: 64 (originally 32)  Memory Usage: 4033kB
+		        ->  Seq Scan on "Publ"  (cost=0.00..23480.10 rows=111810 width=792) (actual time=0.036..392.080 rows=1233214 loops=1)
+		Planning Time: 0.235 ms
+		Execution Time: 17885.086 ms
+
+		 --EXECUTING SECOND JOIN-- 
+		Hash Join  (cost=30736.31..104368.78 rows=1423341 width=516) (actual time=329.746..612.326 rows=183 loops=1)
+		  Hash Cond: (("Publ"."pubID")::text = ("Auth"."pubID")::text)
+		  ->  Seq Scan on "Publ"  (cost=0.00..23480.10 rows=111810 width=792) (actual time=0.036..188.583 rows=1233214 loops=1)
+		  ->  Hash  (cost=30704.49..30704.49 rows=2546 width=276) (actual time=304.271..304.271 rows=183 loops=1)
+		        Buckets: 4096  Batches: 1  Memory Usage: 43kB
+		        ->  Gather  (cost=1000.00..30704.49 rows=2546 width=276) (actual time=43.678..304.145 rows=183 loops=1)
+		              Workers Planned: 2
+		              Workers Launched: 2
+		              ->  Parallel Seq Scan on "Auth"  (cost=0.00..29449.89 rows=1061 width=276) (actual time=37.093..232.819 rows=61 loops=3)
+		                    Filter: ((name)::text = 'Divesh Srivastava'::text)
+		                    Rows Removed by Filter: 1031673
+		Planning Time: 0.079 ms
+		Execution Time: 612.417 ms
+	 Task 4 ok. 
+
